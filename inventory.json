@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/cff419ca-05e5-49ff-81bd-49617054ee99.dot",
+        "dotFile": "output/983661e9-40c0-4efb-b3b6-75bcdbc5e601.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-cff419ca-05e5-49ff-81bd-49617054ee99.json"
+        "json": "output/gc-list-983661e9-40c0-4efb-b3b6-75bcdbc5e601.json"
     },
     "result": {
         "error": false,
@@ -337,6 +337,7 @@
                                             "Value": "EKS"
                                         }
                                     ],
+                                    "InstanceProfiles": [],
                                     "Policies": [],
                                     "AttachedPolicies": [
                                         {
@@ -351,8 +352,7 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ],
-                                    "InstanceProfiles": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -485,7 +485,7 @@
                         "resources": []
                     },
                     {
-                        "type": "InternetGateway",
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
@@ -493,7 +493,7 @@
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "InternetGateway",
                         "resources": []
                     },
                     {
