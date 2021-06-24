@@ -1,3 +1,3 @@
-# GCP deploymemt
+# Aws deploymemt
 
-Boilerplate to deploy infrastructure on GCP with GruCloud.
+Boilerplate to deploy infrastructure on Aws with GruCloud.
