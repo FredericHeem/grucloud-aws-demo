@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/d60ad626-e3d2-4037-ab8f-25abfb3b1487.dot",
+        "dotFile": "output/2db66d28-5591-43ad-887a-951abf8928c3.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-d60ad626-e3d2-4037-ab8f-25abfb3b1487.json"
+        "json": "output/gc-list-2db66d28-5591-43ad-887a-951abf8928c3.json"
     },
     "result": {
         "error": false,
@@ -179,10 +179,10 @@
                                     },
                                     "MaxSessionDuration": 3600,
                                     "Tags": [],
-                                    "AttachedPolicies": [],
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
+                                    "AttachedPolicies": [],
                                     "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
@@ -489,11 +489,11 @@
                         "resources": []
                     },
                     {
-                        "type": "Subnet",
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "Subnet",
                         "resources": []
                     },
                     {
