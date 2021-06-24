@@ -1,3 +1,3 @@
 module.exports = () => ({
-  projectId: "grucloud-test",
+  projectId: "aws-test",
 });
