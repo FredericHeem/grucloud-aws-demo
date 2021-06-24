@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/1d013dbb-74b9-4885-997a-83db3a158ba0.dot",
+        "dotFile": "output/28c17038-dcd7-44df-8321-42bb3a6fc61f.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-1d013dbb-74b9-4885-997a-83db3a158ba0.json"
+        "json": "output/gc-list-28c17038-dcd7-44df-8321-42bb3a6fc61f.json"
     },
     "result": {
         "error": false,
@@ -377,10 +377,6 @@
                         ]
                     },
                     {
-                        "type": "Vpc",
-                        "resources": []
-                    },
-                    {
                         "type": "HostedZone",
                         "resources": [
                             {
@@ -483,6 +479,10 @@
                                 "show": true
                             }
                         ]
+                    },
+                    {
+                        "type": "Vpc",
+                        "resources": []
                     },
                     {
                         "type": "InternetGateway",
