@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/fbbdbe85-a8da-401e-a2e4-37fc6b299424.dot",
+        "dotFile": "output/b786e6ec-572e-44f5-8992-39af2381a9aa.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-fbbdbe85-a8da-401e-a2e4-37fc6b299424.json"
+        "json": "output/gc-list-b786e6ec-572e-44f5-8992-39af2381a9aa.json"
     },
     "result": {
         "error": false,
@@ -182,8 +182,8 @@
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
-                                    "AttachedPolicies": [],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "AttachedPolicies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -377,10 +377,6 @@
                         ]
                     },
                     {
-                        "type": "Vpc",
-                        "resources": []
-                    },
-                    {
                         "type": "HostedZone",
                         "resources": [
                             {
@@ -485,15 +481,19 @@
                         ]
                     },
                     {
+                        "type": "Vpc",
+                        "resources": []
+                    },
+                    {
                         "type": "InternetGateway",
                         "resources": []
                     },
                     {
-                        "type": "Subnet",
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "Subnet",
                         "resources": []
                     },
                     {
