@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/295d0ad8-5c93-495b-b54e-bbe836b10bbe.dot",
+        "dotFile": "output/6df6523e-fce1-410a-90f2-64125f928830.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,532 +17,488 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-295d0ad8-5c93-495b-b54e-bbe836b10bbe.json"
+        "json": "output/gc-list-6df6523e-fce1-410a-90f2-64125f928830.json"
     },
     "result": {
-        "error": true,
+        "error": false,
         "results": [
             {
                 "providerName": "aws",
                 "kind": "livesPerType",
-                "error": true,
+                "error": false,
                 "results": [
                     {
-                        "type": "Image",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "Certificate",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:45.532Z",
-                            "requestId": "472e28b0-a9fc-498f-87cf-df734f7d903b",
-                            "statusCode": 400,
-                            "retryable": false,
-                            "retryDelay": 60.79266978927622
-                        }
-                    },
-                    {
-                        "type": "Volume",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:45.542Z",
-                            "requestId": "575e5db6-bc5c-43a2-a263-4d47b7f6603b",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 7.115263609650779
-                        }
-                    },
-                    {
-                        "type": "KeyPair",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:45.551Z",
-                            "requestId": "41c9d5ee-5448-4d36-b274-12622b02defa",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 89.76498154702219
-                        }
-                    },
-                    {
                         "type": "NetworkAcl",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:45.559Z",
-                            "requestId": "0e7ee638-f73f-4a60-804d-ac1dc70560fb",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 0.055574992347695584
-                        }
-                    },
-                    {
-                        "type": "NetworkInterface",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:45.567Z",
-                            "requestId": "64965e63-ba06-479c-824c-fc5600066b98",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 42.959243434913795
-                        }
-                    },
-                    {
-                        "type": "IamOpenIDConnectProvider",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:45.581Z",
-                            "requestId": "e281388f-3817-40ee-8b3b-9b879f7121ca",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 99.52145307833658
-                        }
-                    },
-                    {
-                        "type": "IamPolicy",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:45.590Z",
-                            "requestId": "fd8b3710-607c-4324-8ea0-b1d8f8dba684",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 49.823390538890266
-                        }
+                        "resources": []
                     },
                     {
                         "type": "Route53Domain",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:45.731Z",
-                            "requestId": "7e81fd49-62a0-4d0d-836e-b4094ad85c55",
-                            "statusCode": 400,
-                            "retryable": false,
-                            "retryDelay": 74.98882108826324
-                        }
-                    },
-                    {
-                        "type": "KmsKey",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:45.746Z",
-                            "requestId": "9c467e20-4b92-4b8a-afe6-e1421e63f4bd",
-                            "statusCode": 400,
-                            "retryable": false,
-                            "retryDelay": 82.74052234562075
-                        }
-                    },
-                    {
-                        "type": "S3Bucket",
-                        "resources": [],
-                        "error": {
-                            "message": "The AWS Access Key Id you provided does not exist in our records.",
-                            "code": "InvalidAccessKeyId",
-                            "region": null,
-                            "time": "2021-06-25T22:13:45.753Z",
-                            "requestId": "DD35MQTDCFZD4SAJ",
-                            "extendedRequestId": "3z1o0nOIZtUpdqe4Dg4KVxotTviSVS9CUKthrBGwgx/6UIItutlzWQyr/xUQdKRriSs9ea3eU8w=",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 60.90984306166658
-                        }
-                    },
-                    {
-                        "type": "S3Object",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "IamGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.081Z",
-                            "requestId": "46215f9c-f2db-49e5-ae0a-9cc804e31fbe",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 35.42804804438888
-                        }
+                        "resources": [
+                            {
+                                "uri": "aws::Route53Domain::starhack.it",
+                                "name": "starhack.it",
+                                "displayName": "starhack.it",
+                                "id": "starhack.it",
+                                "providerName": "aws",
+                                "type": "Route53Domain",
+                                "live": {
+                                    "DomainName": "starhack.it",
+                                    "Nameservers": [
+                                        {
+                                            "Name": "ns-1752.awsdns-27.co.uk",
+                                            "GlueIps": []
+                                        },
+                                        {
+                                            "Name": "ns-1089.awsdns-08.org",
+                                            "GlueIps": []
+                                        },
+                                        {
+                                            "Name": "ns-36.awsdns-04.com",
+                                            "GlueIps": []
+                                        },
+                                        {
+                                            "Name": "ns-674.awsdns-20.net",
+                                            "GlueIps": []
+                                        }
+                                    ],
+                                    "AutoRenew": true,
+                                    "AdminContact": {
+                                        "FirstName": "Frederic",
+                                        "LastName": "heem",
+                                        "ContactType": "PERSON",
+                                        "AddressLine1": "flat 7",
+                                        "AddressLine2": "friern park",
+                                        "City": "LONDON",
+                                        "CountryCode": "GB",
+                                        "ZipCode": "N12 9LA",
+                                        "PhoneNumber": "+44.7479336201",
+                                        "Email": "frederic.heem@gmail.com",
+                                        "ExtraParams": [
+                                            {
+                                                "Name": "IT_PIN",
+                                                "Value": "HMEFDR78H11Z110H"
+                                            },
+                                            {
+                                                "Name": "IT_NATIONALITY",
+                                                "Value": "FR"
+                                            }
+                                        ]
+                                    },
+                                    "RegistrantContact": {
+                                        "FirstName": "Frederic",
+                                        "LastName": "heem",
+                                        "ContactType": "PERSON",
+                                        "AddressLine1": "flat 7",
+                                        "AddressLine2": "friern park",
+                                        "City": "LONDON",
+                                        "CountryCode": "GB",
+                                        "ZipCode": "N12 9LA",
+                                        "PhoneNumber": "+44.7479336201",
+                                        "Email": "frederic.heem@gmail.com",
+                                        "ExtraParams": [
+                                            {
+                                                "Name": "IT_PIN",
+                                                "Value": "HMEFDR78H11Z110H"
+                                            },
+                                            {
+                                                "Name": "IT_NATIONALITY",
+                                                "Value": "FR"
+                                            }
+                                        ]
+                                    },
+                                    "TechContact": {
+                                        "FirstName": "Frederic",
+                                        "LastName": "heem",
+                                        "ContactType": "PERSON",
+                                        "AddressLine1": "flat 7",
+                                        "AddressLine2": "friern park",
+                                        "City": "LONDON",
+                                        "CountryCode": "GB",
+                                        "ZipCode": "N12 9LA",
+                                        "PhoneNumber": "+44.7479336201",
+                                        "Email": "frederic.heem@gmail.com",
+                                        "ExtraParams": [
+                                            {
+                                                "Name": "IT_PIN",
+                                                "Value": "HMEFDR78H11Z110H"
+                                            },
+                                            {
+                                                "Name": "IT_NATIONALITY",
+                                                "Value": "FR"
+                                            }
+                                        ]
+                                    },
+                                    "AdminPrivacy": true,
+                                    "RegistrantPrivacy": true,
+                                    "TechPrivacy": true,
+                                    "RegistrarName": "GANDI SAS",
+                                    "WhoIsServer": "whois.gandi.net",
+                                    "RegistrarUrl": "http://www.gandi.net",
+                                    "AbuseContactEmail": "abuse@support.gandi.net",
+                                    "AbuseContactPhone": "+33.170377661",
+                                    "CreationDate": "2015-10-13T13:43:17.000Z",
+                                    "UpdatedDate": "2021-02-04T16:10:29.000Z",
+                                    "ExpirationDate": "2022-01-10T22:59:59.000Z"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "IamRole",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.092Z",
-                            "requestId": "693731d1-7d76-4084-986f-b2668408c410",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 14.195023711595468
-                        }
-                    },
-                    {
-                        "type": "HostedZone",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.345Z",
-                            "requestId": "567c9786-34a0-4014-a34e-834de11a0bc3",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 56.68936893256904
-                        }
-                    },
-                    {
-                        "type": "Route53Record",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "CloudFrontDistribution",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.360Z",
-                            "requestId": "b2d55384-93b0-4ee8-9807-91e5c0c25840",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 71.98157371252204
-                        }
-                    },
-                    {
-                        "type": "IamUser",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.534Z",
-                            "requestId": "11ddb0e9-5c07-4006-9b7e-1721e295267f",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 21.02285756477007
-                        }
-                    },
-                    {
-                        "type": "IamInstanceProfile",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:46.583Z",
-                            "requestId": "4f3a0135-adea-44c1-ab12-0001acb58b7c",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 16.507347293069795
-                        }
-                    },
-                    {
-                        "type": "Function",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:46.661Z",
-                            "requestId": "f2dc4e06-c583-4870-be61-0daaad6be859",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 51.06470124629221
-                        }
+                        "resources": [
+                            {
+                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
+                                "name": "OrganizationAccountAccessRole",
+                                "displayName": "OrganizationAccountAccessRole",
+                                "id": "arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
+                                "providerName": "aws",
+                                "type": "IamRole",
+                                "live": {
+                                    "Path": "/",
+                                    "RoleName": "OrganizationAccountAccessRole",
+                                    "RoleId": "AROAYUUML7C2STIJOIOEH",
+                                    "Arn": "arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
+                                    "CreateDate": "2021-02-02T17:43:34.000Z",
+                                    "AssumeRolePolicyDocument": {
+                                        "Version": "2012-10-17",
+                                        "Statement": [
+                                            {
+                                                "Effect": "Allow",
+                                                "Principal": {
+                                                    "AWS": "arn:aws:iam::840541460064:root"
+                                                },
+                                                "Action": "sts:AssumeRole"
+                                            }
+                                        ]
+                                    },
+                                    "MaxSessionDuration": 3600,
+                                    "Tags": [],
+                                    "Policies": [
+                                        "AdministratorAccess"
+                                    ],
+                                    "AttachedPolicies": [],
+                                    "InstanceProfiles": []
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "IamPolicy",
+                                        "ids": []
+                                    },
+                                    {
+                                        "type": "IamOpenIDConnectProvider",
+                                        "ids": []
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/role-cluster",
+                                "name": "role-cluster",
+                                "displayName": "role-cluster",
+                                "id": "arn:aws:iam::594073614517:role/role-cluster",
+                                "providerName": "aws",
+                                "type": "IamRole",
+                                "live": {
+                                    "Path": "/",
+                                    "RoleName": "role-cluster",
+                                    "RoleId": "AROAYUUML7C22FVAL335R",
+                                    "Arn": "arn:aws:iam::594073614517:role/role-cluster",
+                                    "CreateDate": "2021-05-06T04:32:08.000Z",
+                                    "AssumeRolePolicyDocument": {
+                                        "Version": "2012-10-17",
+                                        "Statement": [
+                                            {
+                                                "Effect": "Allow",
+                                                "Principal": {
+                                                    "Service": "eks.amazonaws.com"
+                                                },
+                                                "Action": "sts:AssumeRole"
+                                            }
+                                        ]
+                                    },
+                                    "MaxSessionDuration": 3600,
+                                    "Tags": [
+                                        {
+                                            "Key": "Name",
+                                            "Value": "role-cluster"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "starhackit"
+                                        },
+                                        {
+                                            "Key": "namespace",
+                                            "Value": "EKS"
+                                        }
+                                    ],
+                                    "AttachedPolicies": [
+                                        {
+                                            "PolicyName": "AmazonEKSClusterPolicy",
+                                            "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+                                        },
+                                        {
+                                            "PolicyName": "AmazonEKSVPCResourceController",
+                                            "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+                                        }
+                                    ],
+                                    "InstanceProfiles": [],
+                                    "Policies": []
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "EKS",
+                                "dependencies": [
+                                    {
+                                        "type": "IamPolicy",
+                                        "ids": [
+                                            "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",
+                                            "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+                                        ]
+                                    },
+                                    {
+                                        "type": "IamOpenIDConnectProvider",
+                                        "ids": []
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/role-node-group",
+                                "name": "role-node-group",
+                                "displayName": "role-node-group",
+                                "id": "arn:aws:iam::594073614517:role/role-node-group",
+                                "providerName": "aws",
+                                "type": "IamRole",
+                                "live": {
+                                    "Path": "/",
+                                    "RoleName": "role-node-group",
+                                    "RoleId": "AROAYUUML7C24J7UEVWED",
+                                    "Arn": "arn:aws:iam::594073614517:role/role-node-group",
+                                    "CreateDate": "2021-05-06T04:32:08.000Z",
+                                    "AssumeRolePolicyDocument": {
+                                        "Version": "2012-10-17",
+                                        "Statement": [
+                                            {
+                                                "Effect": "Allow",
+                                                "Principal": {
+                                                    "Service": "ec2.amazonaws.com"
+                                                },
+                                                "Action": "sts:AssumeRole"
+                                            }
+                                        ]
+                                    },
+                                    "MaxSessionDuration": 3600,
+                                    "Tags": [
+                                        {
+                                            "Key": "Name",
+                                            "Value": "role-node-group"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "starhackit"
+                                        },
+                                        {
+                                            "Key": "namespace",
+                                            "Value": "EKS"
+                                        }
+                                    ],
+                                    "Policies": [],
+                                    "AttachedPolicies": [
+                                        {
+                                            "PolicyName": "AmazonEKSWorkerNodePolicy",
+                                            "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+                                        },
+                                        {
+                                            "PolicyName": "AmazonEC2ContainerRegistryReadOnly",
+                                            "PolicyArn": "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+                                        },
+                                        {
+                                            "PolicyName": "AmazonEKS_CNI_Policy",
+                                            "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+                                        }
+                                    ],
+                                    "InstanceProfiles": []
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "EKS",
+                                "dependencies": [
+                                    {
+                                        "type": "IamPolicy",
+                                        "ids": [
+                                            "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy",
+                                            "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly",
+                                            "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+                                        ]
+                                    },
+                                    {
+                                        "type": "IamOpenIDConnectProvider",
+                                        "ids": []
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "Vpc",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:46.988Z",
-                            "requestId": "e4265472-afa4-4e99-b9b3-92e1caeac26a",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 54.13926999960979
-                        }
+                        "resources": []
+                    },
+                    {
+                        "type": "HostedZone",
+                        "resources": [
+                            {
+                                "uri": "aws::HostedZone::/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "name": "starhack.it.",
+                                "displayName": "starhack.it.",
+                                "id": "/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "providerName": "aws",
+                                "type": "HostedZone",
+                                "live": {
+                                    "Id": "/hostedzone/Z09429703J0B6XPB98IZ9",
+                                    "Name": "starhack.it.",
+                                    "CallerReference": "grucloud-Fri Apr 30 2021 00:26:41 GMT-0500 (Colombia Standard Time)",
+                                    "Config": {
+                                        "PrivateZone": false
+                                    },
+                                    "ResourceRecordSetCount": 3,
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
+                                        }
+                                    ],
+                                    "RecordSet": [
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "A",
+                                            "TTL": 60,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "18.130.120.30"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "NS",
+                                            "TTL": 172800,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "ns-1752.awsdns-27.co.uk."
+                                                },
+                                                {
+                                                    "Value": "ns-1089.awsdns-08.org."
+                                                },
+                                                {
+                                                    "Value": "ns-36.awsdns-04.com."
+                                                },
+                                                {
+                                                    "Value": "ns-674.awsdns-20.net."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "SOA",
+                                            "TTL": 900,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "ns-1752.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "HostedZone",
+                                        "ids": []
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "InternetGateway",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:47.487Z",
-                            "requestId": "0eb5b25e-b4aa-412e-a4d2-b846cd9add21",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 66.52919810474177
-                        }
-                    },
-                    {
-                        "type": "Subnet",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:47.498Z",
-                            "requestId": "de68f827-93bc-4f7a-a820-55a5ca53e649",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 33.07108228932778
-                        }
+                        "resources": []
                     },
                     {
                         "type": "SecurityGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:47.526Z",
-                            "requestId": "9f10a7af-61d1-43fd-8d4b-a8549b213978",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 61.466054787887
-                        }
+                        "resources": []
                     },
                     {
-                        "type": "SecurityGroupRuleIngress",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "SecurityGroupRuleEgress",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "TargetGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:47.654Z",
-                            "requestId": "f668e7db-edb1-4bdc-8e05-8cc69a7648bc",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 0.9101604881020187
-                        }
-                    },
-                    {
-                        "type": "ElasticIpAddress",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:47.982Z",
-                            "requestId": "6334b833-b47d-4266-94b0-5fdae44f6ee2",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 3.663785310216361
-                        }
+                        "type": "Subnet",
+                        "resources": []
                     },
                     {
                         "type": "RouteTable",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:47.994Z",
-                            "requestId": "0f1983f8-fb06-470c-9dce-4c86e7056f90",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 16.223956772216308
-                        }
-                    },
-                    {
-                        "type": "LoadBalancer",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.000Z",
-                            "requestId": "7de6bc0b-f44b-4179-a573-e47b7d9841b0",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 50.56793250218043
-                        }
-                    },
-                    {
-                        "type": "EKSCluster",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:48.047Z",
-                            "requestId": "4a1b0303-b9c2-48bb-ad15-f7d06d342035",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 64.31752500862817
-                        }
-                    },
-                    {
-                        "type": "DBSubnetGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.121Z",
-                            "requestId": "2cb90f49-93de-4eaf-bab8-6858bb8ef1e0",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 15.292346615568132
-                        }
-                    },
-                    {
-                        "type": "NatGateway",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:48.437Z",
-                            "requestId": "22fb0857-d51e-4c3c-b255-82967ce146c0",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 36.53321107940031
-                        }
-                    },
-                    {
-                        "type": "Route",
-                        "resources": [],
-                        "error": {
-                            "generatedMessage": false,
-                            "code": "ERR_ASSERTION",
-                            "expected": true,
-                            "operator": "=="
-                        }
-                    },
-                    {
-                        "type": "EC2",
-                        "resources": [],
-                        "error": {
-                            "message": "AWS was not able to validate the provided access credentials",
-                            "code": "AuthFailure",
-                            "time": "2021-06-25T22:13:48.455Z",
-                            "requestId": "dc029280-f38c-48fb-9eb9-f60441f7032a",
-                            "statusCode": 401,
-                            "retryable": false,
-                            "retryDelay": 43.64519217505518
-                        }
-                    },
-                    {
-                        "type": "Listener",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.478Z",
-                            "requestId": "fea6a4b3-869b-4a9e-ab03-8f35772c5ccc",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 30.993550895573495
-                        }
-                    },
-                    {
-                        "type": "AutoScalingGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.602Z",
-                            "requestId": "e193059e-31a1-4f19-b86b-36b38cf423c1",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 40.360322955192075
-                        }
-                    },
-                    {
-                        "type": "DBCluster",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.610Z",
-                            "requestId": "97e51130-a705-4aaa-9345-3910868da071",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 27.729599875180135
-                        }
-                    },
-                    {
-                        "type": "Rule",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:48.925Z",
-                            "requestId": "cda02c53-20be-4d99-bb7a-e55487c71b02",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 25.249008883375488
-                        }
-                    },
-                    {
-                        "type": "EKSNodeGroup",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "UnrecognizedClientException",
-                            "time": "2021-06-25T22:13:49.058Z",
-                            "requestId": "9ee5955a-1224-46e0-a214-a877f1d7b7e8",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 92.98072943205749
-                        }
-                    },
-                    {
-                        "type": "DBInstance",
-                        "resources": [],
-                        "error": {
-                            "message": "The security token included in the request is invalid.",
-                            "code": "InvalidClientTokenId",
-                            "time": "2021-06-25T22:13:49.068Z",
-                            "requestId": "0fa3eb7c-a2d1-4608-9ff5-9a84dfac0069",
-                            "statusCode": 403,
-                            "retryable": false,
-                            "retryDelay": 20.256586256417997
-                        }
+                        "resources": []
                     }
                 ]
             }
