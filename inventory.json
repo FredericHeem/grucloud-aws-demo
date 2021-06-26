@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/b144aaf7-21eb-40b8-b5ab-3c0168c04e3a.dot",
+        "dotFile": "output/a9345173-7fb8-41b9-b7b5-605feda53fab.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-b144aaf7-21eb-40b8-b5ab-3c0168c04e3a.json"
+        "json": "output/gc-list-a9345173-7fb8-41b9-b7b5-605feda53fab.json"
     },
     "result": {
         "error": false,
