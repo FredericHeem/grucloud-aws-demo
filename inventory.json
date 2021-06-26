@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/a64e6675-1048-445c-a644-daae285be198.dot",
+        "dotFile": "output/8668ca41-4e5d-48e4-bf75-d4b5ac7cc289.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-a64e6675-1048-445c-a644-daae285be198.json"
+        "json": "output/gc-list-8668ca41-4e5d-48e4-bf75-d4b5ac7cc289.json"
     },
     "result": {
         "error": false,
@@ -253,6 +253,7 @@
                                             "Value": "EKS"
                                         }
                                     ],
+                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -263,8 +264,7 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
                                     ],
-                                    "InstanceProfiles": [],
-                                    "Policies": []
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -377,6 +377,10 @@
                         ]
                     },
                     {
+                        "type": "Vpc",
+                        "resources": []
+                    },
+                    {
                         "type": "HostedZone",
                         "resources": [
                             {
@@ -479,10 +483,6 @@
                                 "show": true
                             }
                         ]
-                    },
-                    {
-                        "type": "Vpc",
-                        "resources": []
                     },
                     {
                         "type": "InternetGateway",
