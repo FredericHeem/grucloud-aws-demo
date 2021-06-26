@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/5f55e209-0a9b-407b-8b28-552da4de18a2.dot",
+        "dotFile": "output/4b61b1ec-8b45-4c46-8748-c328191493a3.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-5f55e209-0a9b-407b-8b28-552da4de18a2.json"
+        "json": "output/gc-list-4b61b1ec-8b45-4c46-8748-c328191493a3.json"
     },
     "result": {
         "error": false,
@@ -182,8 +182,8 @@
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
-                                    "AttachedPolicies": [],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "AttachedPolicies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
