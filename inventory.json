@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/fb69aee1-d327-4fd7-a16b-3a813164cc94.dot",
+        "dotFile": "output/0413268f-6c97-4aea-b874-7e5b46f94fcb.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-fb69aee1-d327-4fd7-a16b-3a813164cc94.json"
+        "json": "output/gc-list-0413268f-6c97-4aea-b874-7e5b46f94fcb.json"
     },
     "result": {
         "error": false,
@@ -179,11 +179,11 @@
                                     },
                                     "MaxSessionDuration": 3600,
                                     "Tags": [],
-                                    "InstanceProfiles": [],
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
-                                    "AttachedPolicies": []
+                                    "AttachedPolicies": [],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -254,6 +254,7 @@
                                         }
                                     ],
                                     "Policies": [],
+                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -263,8 +264,7 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ],
-                                    "InstanceProfiles": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -485,15 +485,15 @@
                         "resources": []
                     },
                     {
+                        "type": "Subnet",
+                        "resources": []
+                    },
+                    {
                         "type": "InternetGateway",
                         "resources": []
                     },
                     {
                         "type": "SecurityGroup",
-                        "resources": []
-                    },
-                    {
-                        "type": "Subnet",
                         "resources": []
                     },
                     {
