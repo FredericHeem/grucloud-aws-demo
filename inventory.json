@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/b0df1b66-69e1-4e8a-8fb2-db7d980872b3.dot",
+        "dotFile": "output/cfc00700-5e40-4f2e-ab46-0fcf1da5d384.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-b0df1b66-69e1-4e8a-8fb2-db7d980872b3.json"
+        "json": "output/gc-list-cfc00700-5e40-4f2e-ab46-0fcf1da5d384.json"
     },
     "result": {
         "error": false,
@@ -394,36 +394,6 @@
                                         "PrivateZone": false
                                     },
                                     "ResourceRecordSetCount": 3,
-                                    "Tags": [
-                                        {
-                                            "Key": "DelegationSetId",
-                                            "Value": "N07547383GD2HQNOQVK2N"
-                                        },
-                                        {
-                                            "Key": "ManagedBy",
-                                            "Value": "GruCloud"
-                                        },
-                                        {
-                                            "Key": "stage",
-                                            "Value": "dev"
-                                        },
-                                        {
-                                            "Key": "starhack.it.",
-                                            "Value": "starhack.it.-ipv4"
-                                        },
-                                        {
-                                            "Key": "CreatedByProvider",
-                                            "Value": "aws"
-                                        },
-                                        {
-                                            "Key": "projectName",
-                                            "Value": "grucloud-aws-starhackit"
-                                        },
-                                        {
-                                            "Key": "Name",
-                                            "Value": "starhack.it."
-                                        }
-                                    ],
                                     "RecordSet": [
                                         {
                                             "Name": "starhack.it.",
@@ -464,6 +434,36 @@
                                                 }
                                             ]
                                         }
+                                    ],
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
+                                        }
                                     ]
                                 },
                                 "cannotBeDeleted": false,
@@ -485,15 +485,15 @@
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
-                        "resources": []
-                    },
-                    {
                         "type": "InternetGateway",
                         "resources": []
                     },
                     {
                         "type": "Subnet",
+                        "resources": []
+                    },
+                    {
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
