@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/65fbcb00-edd6-443c-bbb4-b7e1fee1241d.dot",
+        "dotFile": "output/8c03a08f-8356-480d-afa0-1207c455e042.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-65fbcb00-edd6-443c-bbb4-b7e1fee1241d.json"
+        "json": "output/gc-list-8c03a08f-8356-480d-afa0-1207c455e042.json"
     },
     "result": {
         "error": false,
@@ -338,7 +338,6 @@
                                         }
                                     ],
                                     "Policies": [],
-                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,7 +351,8 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
