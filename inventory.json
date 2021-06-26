@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/d9dd0386-7e2e-4d24-a53d-255b7e12d82b.dot",
+        "dotFile": "output/1f94afec-6f90-46fd-84b9-455f2a02ca16.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-d9dd0386-7e2e-4d24-a53d-255b7e12d82b.json"
+        "json": "output/gc-list-1f94afec-6f90-46fd-84b9-455f2a02ca16.json"
     },
     "result": {
         "error": false,
@@ -337,7 +337,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,6 +351,7 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
                                     ],
+                                    "Policies": [],
                                     "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
@@ -485,11 +485,11 @@
                         "resources": []
                     },
                     {
-                        "type": "Subnet",
+                        "type": "InternetGateway",
                         "resources": []
                     },
                     {
-                        "type": "InternetGateway",
+                        "type": "Subnet",
                         "resources": []
                     },
                     {
