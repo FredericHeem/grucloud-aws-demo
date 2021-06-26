@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/fa427df8-69e7-4274-9f29-f16ec6c85cd1.dot",
+        "dotFile": "output/85d47a81-f828-4efa-ab27-4fc17a3a48d0.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-fa427df8-69e7-4274-9f29-f16ec6c85cd1.json"
+        "json": "output/gc-list-85d47a81-f828-4efa-ab27-4fc17a3a48d0.json"
     },
     "result": {
         "error": false,
@@ -254,6 +254,7 @@
                                         }
                                     ],
                                     "Policies": [],
+                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -263,8 +264,7 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ],
-                                    "InstanceProfiles": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
