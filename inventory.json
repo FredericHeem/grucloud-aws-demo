@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/cff3f9bc-d112-4950-b795-ceb1e22d0bf3.dot",
+        "dotFile": "output/cd063deb-6e47-4644-9cc7-a63e30a3b678.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-cff3f9bc-d112-4950-b795-ceb1e22d0bf3.json"
+        "json": "output/gc-list-cd063deb-6e47-4644-9cc7-a63e30a3b678.json"
     },
     "result": {
         "error": false,
@@ -489,11 +489,11 @@
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "Subnet",
                         "resources": []
                     },
                     {
-                        "type": "Subnet",
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
