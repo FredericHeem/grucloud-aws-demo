@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/7d8aa9ec-4f4c-4c57-84cf-0ea32696dbe3.dot",
+        "dotFile": "output/b0df1b66-69e1-4e8a-8fb2-db7d980872b3.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-7d8aa9ec-4f4c-4c57-84cf-0ea32696dbe3.json"
+        "json": "output/gc-list-b0df1b66-69e1-4e8a-8fb2-db7d980872b3.json"
     },
     "result": {
         "error": false,
@@ -338,7 +338,6 @@
                                         }
                                     ],
                                     "Policies": [],
-                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,7 +351,8 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -485,15 +485,15 @@
                         "resources": []
                     },
                     {
+                        "type": "SecurityGroup",
+                        "resources": []
+                    },
+                    {
                         "type": "InternetGateway",
                         "resources": []
                     },
                     {
                         "type": "Subnet",
-                        "resources": []
-                    },
-                    {
-                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
