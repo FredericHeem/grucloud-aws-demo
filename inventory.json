@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/9427bc8d-ab0b-4536-bb3f-3c0aeffe6a2f.dot",
+        "dotFile": "output/08a10a8e-1b97-4732-bb76-38105a820d07.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-9427bc8d-ab0b-4536-bb3f-3c0aeffe6a2f.json"
+        "json": "output/gc-list-08a10a8e-1b97-4732-bb76-38105a820d07.json"
     },
     "result": {
         "error": false,
@@ -253,7 +253,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -264,7 +263,8 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
                                     ],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "Policies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -338,7 +338,6 @@
                                         }
                                     ],
                                     "Policies": [],
-                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,7 +351,8 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
