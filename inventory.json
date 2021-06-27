@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/52a8d772-a5c6-47c8-9045-1d831e5aa895.dot",
+        "dotFile": "output/9bd43f5c-49d3-47db-9ae1-cbf33475fd71.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-52a8d772-a5c6-47c8-9045-1d831e5aa895.json"
+        "json": "output/gc-list-9bd43f5c-49d3-47db-9ae1-cbf33475fd71.json"
     },
     "result": {
         "error": false,
@@ -253,7 +253,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -264,7 +263,8 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
                                     ],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "Policies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -337,7 +337,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,7 +351,8 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
                                     ],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "Policies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -375,6 +375,10 @@
                                 "show": true
                             }
                         ]
+                    },
+                    {
+                        "type": "Vpc",
+                        "resources": []
                     },
                     {
                         "type": "HostedZone",
@@ -479,10 +483,6 @@
                                 "show": true
                             }
                         ]
-                    },
-                    {
-                        "type": "Vpc",
-                        "resources": []
                     },
                     {
                         "type": "InternetGateway",
