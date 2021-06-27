@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/4cd6d9a6-a80c-4bda-a650-fd845e350a16.dot",
+        "dotFile": "output/eac225b3-488c-42cd-866b-f773486ad085.dot",
         "title": "",
         "provider": [
             "aws"
@@ -17,7 +17,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-4cd6d9a6-a80c-4bda-a650-fd845e350a16.json"
+        "json": "output/gc-list-eac225b3-488c-42cd-866b-f773486ad085.json"
     },
     "result": {
         "error": false,
@@ -182,8 +182,8 @@
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
-                                    "InstanceProfiles": [],
-                                    "AttachedPolicies": []
+                                    "AttachedPolicies": [],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -254,7 +254,6 @@
                                         }
                                     ],
                                     "Policies": [],
-                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -264,7 +263,8 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -489,11 +489,11 @@
                         "resources": []
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "Subnet",
                         "resources": []
                     },
                     {
-                        "type": "Subnet",
+                        "type": "SecurityGroup",
                         "resources": []
                     },
                     {
