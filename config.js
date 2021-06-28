@@ -1,1 +1,12 @@
-/var/folders/f8/r4skslss3c111g5f9p5zhrnw0000gn/T/grucloud-git-b2c611ec-55ef-4e31-b425-93a3b26895999hPO4M/config.js
+const pkg = require("./package.json");
+module.exports = ({ stage }) => ({
+  projectName: pkg.name,
+  keyPair: { name: "kp" },
+  eip: { name: "eip" },
+  ec2Instance: {
+    name: "web-server-ec2-example",
+    properties: () => ({
+      InstanceType: "t2.micro",
+    }),
+  },
+});
