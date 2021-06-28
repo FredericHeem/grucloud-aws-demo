@@ -1,54 +1,25 @@
-const assert = require("assert");
 const { AwsProvider } = require("@grucloud/provider-aws");
-const hook = require("./hook");
+const ModuleAwsVpc = require("@grucloud/module-aws-vpc");
+const ModuleAwsEKS = require("@grucloud/module-aws-eks");
 
-exports.config = require("./config");
-
-const createResources = async ({ provider, resources: { keyPair } }) => {
-  const { config } = provider;
-  assert(config.eip);
-  const eip = await provider.makeElasticIpAddress({
-    name: config.eip.name,
+exports.createStack = async ({ config }) => {
+  const provider = AwsProvider({
+    configs: [ModuleAwsVpc.config, ModuleAwsEKS.config, config],
   });
 
-  const image = await provider.useImage({
-    name: "Amazon Linux 2",
-    properties: () => ({
-      Filters: [
-        {
-          Name: "architecture",
-          Values: ["x86_64"],
-        },
-        {
-          Name: "description",
-          Values: ["Amazon Linux 2 AMI *"],
-        },
-      ],
-    }),
+  const vpcResources = await ModuleAwsVpc.createResources({
+    provider,
   });
 
-  return {
-    eip,
-    ec2Instance: await provider.makeEC2({
-      name: config.ec2Instance.name,
-      dependencies: { keyPair, eip, image },
-      properties: config.ec2Instance.properties,
-    }),
-  };
-};
-exports.createResources = createResources;
-
-exports.createStack = async () => {
-  // Create a AWS provider
-  const provider = AwsProvider({ config: require("./config") });
-  const keyPair = await provider.useKeyPair({
-    name: provider.config.keyPair.name,
+  const eksResources = await ModuleAwsEKS.createResources({
+    provider,
+    resources: vpcResources,
   });
-  const resources = await createResources({ provider, resources: { keyPair } });
 
   return {
     provider,
-    resources,
-    hooks: [hook],
+    resources: { vpc: vpcResources, eks: eksResources },
+    hooks: [...ModuleAwsVpc.hooks, ...ModuleAwsEKS.hooks],
+    isProviderUp: () => ModuleAwsEKS.isProviderUp({ resources: eksResources }),
   };
 };

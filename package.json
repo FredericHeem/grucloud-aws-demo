@@ -1,21 +1,21 @@
 {
-  "name": "@grucloud/example-aws-ec2",
+  "name": "@grucloud/example-module-aws-eks",
   "version": "1.19.1",
+  "description": "Example for the AWS EKS GruCloud Module",
+  "main": "iac.js",
   "private": true,
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "graph-target": "gc graph",
-    "graph-live": "gc list --graph --types-exclude KeyPair",
-    "e2e": "gc d -a -f && gc d -a && gc l && gc a -f && gc a && gc d -f && gc d && gc l -o"
+    "graph-target": "gc graph --title 'EKS Module'",
+    "graph-live": "gc list --graph --title 'EKS Module'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@grucloud/core": "^1.19.1",
+    "@grucloud/module-aws-eks": "^1.19.1",
+    "@grucloud/module-aws-vpc": "^1.19.1",
     "@grucloud/provider-aws": "^1.19.1",
-    "ping": "^0.4.1",
-    "rubico": "^1.6.23",
-    "ssh2": "^0.8.9"
+    "rubico": "^1.6.23"
   }
 }
