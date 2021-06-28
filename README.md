@@ -1,1 +1,21 @@
-/var/folders/f8/r4skslss3c111g5f9p5zhrnw0000gn/T/grucloud-git-b2c611ec-55ef-4e31-b425-93a3b26895999hPO4M/README.md
+# EC2
+
+The purpose of this example is to deploy an EC2 instance attached to an elastic public IP address.
+
+See the [AWS Getting Started](https://www.grucloud.com/docs/aws/AwsGettingStarted)
+
+## Dependency Graph
+
+```sh
+gc graph
+```
+
+![Graph](./diagram-target.svg)
+
+## Live diagram
+
+```sh
+gc list --graph --types-exclude KeyPair
+```
+
+![Graph-Live](./diagram-live.svg)
