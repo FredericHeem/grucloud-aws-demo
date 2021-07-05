@@ -1,14 +1,13 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/861af0d0-44ff-47fe-9322-61297959a258.dot",
+        "dotFile": "output/7d997d10-ca01-4675-87df-b80b5910ce47.dot",
         "title": "",
         "provider": [
             "aws"
         ],
         "all": true,
         "graph": true,
-        "defaultExclude": true,
         "typesExclude": [
             "IamBinding",
             "IamPolicy",
@@ -17,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-861af0d0-44ff-47fe-9322-61297959a258.json"
+        "json": "output/gc-list-7d997d10-ca01-4675-87df-b80b5910ce47.json"
     },
     "result": {
         "error": false,
@@ -29,7 +28,109 @@
                 "results": [
                     {
                         "type": "NetworkAcl",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::NetworkAcl::acl-dd3a31a0",
+                                "name": "acl-dd3a31a0",
+                                "displayName": "acl-dd3a31a0",
+                                "id": "acl-dd3a31a0",
+                                "providerName": "aws",
+                                "type": "NetworkAcl",
+                                "live": {
+                                    "Associations": [
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-a550f6f7",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-c113348c"
+                                        },
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-a450f6f6",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-4914802f"
+                                        },
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-a850f6fa",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-79c08e77"
+                                        },
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-a950f6fb",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-b1bb2990"
+                                        },
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-aa50f6f8",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-7e2fbe21"
+                                        },
+                                        {
+                                            "NetworkAclAssociationId": "aclassoc-ab50f6f9",
+                                            "NetworkAclId": "acl-dd3a31a0",
+                                            "SubnetId": "subnet-5fe2396e"
+                                        }
+                                    ],
+                                    "Entries": [
+                                        {
+                                            "CidrBlock": "0.0.0.0/0",
+                                            "Egress": true,
+                                            "Protocol": "-1",
+                                            "RuleAction": "allow",
+                                            "RuleNumber": 100
+                                        },
+                                        {
+                                            "CidrBlock": "0.0.0.0/0",
+                                            "Egress": true,
+                                            "Protocol": "-1",
+                                            "RuleAction": "deny",
+                                            "RuleNumber": 32767
+                                        },
+                                        {
+                                            "CidrBlock": "0.0.0.0/0",
+                                            "Egress": false,
+                                            "Protocol": "-1",
+                                            "RuleAction": "allow",
+                                            "RuleNumber": 100
+                                        },
+                                        {
+                                            "CidrBlock": "0.0.0.0/0",
+                                            "Egress": false,
+                                            "Protocol": "-1",
+                                            "RuleAction": "deny",
+                                            "RuleNumber": 32767
+                                        }
+                                    ],
+                                    "IsDefault": true,
+                                    "NetworkAclId": "acl-dd3a31a0",
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517"
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "Subnet",
+                                        "ids": [
+                                            "subnet-c113348c",
+                                            "subnet-4914802f",
+                                            "subnet-79c08e77",
+                                            "subnet-b1bb2990",
+                                            "subnet-7e2fbe21",
+                                            "subnet-5fe2396e"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "Route53Domain",
@@ -254,7 +355,6 @@
                                         }
                                     ],
                                     "Policies": [],
-                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -264,7 +364,8 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -337,7 +438,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -352,6 +452,7 @@
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
                                     ],
+                                    "Policies": [],
                                     "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
@@ -482,23 +583,443 @@
                     },
                     {
                         "type": "Vpc",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::Vpc::vpc-904ceced",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "vpc-904ceced",
+                                "providerName": "aws",
+                                "type": "Vpc",
+                                "live": {
+                                    "CidrBlock": "172.31.0.0/16",
+                                    "DhcpOptionsId": "dopt-814e03fb",
+                                    "State": "available",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "InstanceTenancy": "default",
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "CidrBlockAssociationSet": [
+                                        {
+                                            "AssociationId": "vpc-cidr-assoc-cf02bfa0",
+                                            "CidrBlock": "172.31.0.0/16",
+                                            "CidrBlockState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "IsDefault": true,
+                                    "Tags": [],
+                                    "DnsSupport": true,
+                                    "DnsHostnames": true
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "InternetGateway",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::InternetGateway::igw-7bdccb00",
+                                "name": "igw-7bdccb00",
+                                "displayName": "igw-7bdccb00",
+                                "id": "igw-7bdccb00",
+                                "providerName": "aws",
+                                "type": "InternetGateway",
+                                "live": {
+                                    "Attachments": [
+                                        {
+                                            "State": "available",
+                                            "VpcId": "vpc-904ceced"
+                                        }
+                                    ],
+                                    "InternetGatewayId": "igw-7bdccb00",
+                                    "OwnerId": "594073614517",
+                                    "Tags": []
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "Subnet",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::Subnet::subnet-c113348c",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-c113348c",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1d",
+                                    "AvailabilityZoneId": "use1-az4",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.16.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-c113348c",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-c113348c"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::Subnet::subnet-5fe2396e",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-5fe2396e",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1e",
+                                    "AvailabilityZoneId": "use1-az3",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.48.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-5fe2396e",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-5fe2396e"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::Subnet::subnet-79c08e77",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-79c08e77",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1f",
+                                    "AvailabilityZoneId": "use1-az5",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.64.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-79c08e77",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-79c08e77"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::Subnet::subnet-7e2fbe21",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-7e2fbe21",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1a",
+                                    "AvailabilityZoneId": "use1-az6",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.32.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-7e2fbe21",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-7e2fbe21"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::Subnet::subnet-4914802f",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-4914802f",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1b",
+                                    "AvailabilityZoneId": "use1-az1",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.0.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-4914802f",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-4914802f"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            },
+                            {
+                                "uri": "aws::Subnet::subnet-b1bb2990",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "subnet-b1bb2990",
+                                "providerName": "aws",
+                                "type": "Subnet",
+                                "live": {
+                                    "AvailabilityZone": "us-east-1c",
+                                    "AvailabilityZoneId": "use1-az2",
+                                    "AvailableIpAddressCount": 4091,
+                                    "CidrBlock": "172.31.80.0/20",
+                                    "DefaultForAz": true,
+                                    "MapPublicIpOnLaunch": true,
+                                    "MapCustomerOwnedIpOnLaunch": false,
+                                    "State": "available",
+                                    "SubnetId": "subnet-b1bb2990",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "AssignIpv6AddressOnCreation": false,
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "Tags": [],
+                                    "SubnetArn": "arn:aws:ec2:us-east-1:594073614517:subnet/subnet-b1bb2990"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "SecurityGroup",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::SecurityGroup::sg-15c54c1e",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "sg-15c54c1e",
+                                "providerName": "aws",
+                                "type": "SecurityGroup",
+                                "live": {
+                                    "Description": "default VPC security group",
+                                    "GroupName": "default",
+                                    "IpPermissions": [
+                                        {
+                                            "IpProtocol": "-1",
+                                            "IpRanges": [],
+                                            "Ipv6Ranges": [],
+                                            "PrefixListIds": [],
+                                            "UserIdGroupPairs": [
+                                                {
+                                                    "GroupId": "sg-15c54c1e",
+                                                    "UserId": "594073614517"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "OwnerId": "594073614517",
+                                    "GroupId": "sg-15c54c1e",
+                                    "IpPermissionsEgress": [
+                                        {
+                                            "IpProtocol": "-1",
+                                            "IpRanges": [
+                                                {
+                                                    "CidrIp": "0.0.0.0/0"
+                                                }
+                                            ],
+                                            "Ipv6Ranges": [],
+                                            "PrefixListIds": [],
+                                            "UserIdGroupPairs": []
+                                        }
+                                    ],
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "SecurityGroup",
+                                        "ids": [
+                                            "sg-15c54c1e"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     },
                     {
                         "type": "RouteTable",
-                        "resources": []
+                        "resources": [
+                            {
+                                "uri": "aws::RouteTable::rtb-461d3238",
+                                "name": "rtb-461d3238",
+                                "displayName": "rtb-461d3238",
+                                "id": "rtb-461d3238",
+                                "providerName": "aws",
+                                "type": "RouteTable",
+                                "live": {
+                                    "Associations": [
+                                        {
+                                            "Main": true,
+                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
+                                            "RouteTableId": "rtb-461d3238",
+                                            "AssociationState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "PropagatingVgws": [],
+                                    "RouteTableId": "rtb-461d3238",
+                                    "Routes": [
+                                        {
+                                            "DestinationCidrBlock": "172.31.0.0/16",
+                                            "GatewayId": "local",
+                                            "Origin": "CreateRouteTable",
+                                            "State": "active"
+                                        },
+                                        {
+                                            "DestinationCidrBlock": "0.0.0.0/0",
+                                            "GatewayId": "igw-7bdccb00",
+                                            "Origin": "CreateRoute",
+                                            "State": "active"
+                                        }
+                                    ],
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "InternetGateway",
+                                        "ids": [
+                                            "igw-7bdccb00"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
                     }
                 ]
             }
