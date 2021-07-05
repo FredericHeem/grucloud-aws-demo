@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/7d997d10-ca01-4675-87df-b80b5910ce47.dot",
+        "dotFile": "output/b605e3f3-9ce2-4fdf-827b-edf0c251f80e.dot",
         "title": "",
         "provider": [
             "aws"
@@ -16,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-7d997d10-ca01-4675-87df-b80b5910ce47.json"
+        "json": "output/gc-list-b605e3f3-9ce2-4fdf-827b-edf0c251f80e.json"
     },
     "result": {
         "error": false,
@@ -28,14 +28,16 @@
                 "results": [
                     {
                         "type": "NetworkAcl",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::NetworkAcl::acl-dd3a31a0",
+                                "uri": "aws::ec2::NetworkAcl::acl-dd3a31a0",
                                 "name": "acl-dd3a31a0",
                                 "displayName": "acl-dd3a31a0",
                                 "id": "acl-dd3a31a0",
                                 "providerName": "aws",
                                 "type": "NetworkAcl",
+                                "group": "ec2",
                                 "live": {
                                     "Associations": [
                                         {
@@ -133,15 +135,17 @@
                         ]
                     },
                     {
-                        "type": "Route53Domain",
+                        "type": "Domain",
+                        "group": "route53Domain",
                         "resources": [
                             {
-                                "uri": "aws::Route53Domain::starhack.it",
+                                "uri": "aws::route53Domain::Domain::starhack.it",
                                 "name": "starhack.it",
                                 "displayName": "starhack.it",
                                 "id": "starhack.it",
                                 "providerName": "aws",
-                                "type": "Route53Domain",
+                                "type": "Domain",
+                                "group": "route53Domain",
                                 "live": {
                                     "DomainName": "starhack.it",
                                     "Nameservers": [
@@ -251,15 +255,17 @@
                         ]
                     },
                     {
-                        "type": "IamRole",
+                        "type": "Role",
+                        "group": "iam",
                         "resources": [
                             {
-                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
+                                "uri": "aws::iam::Role::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
                                 "name": "OrganizationAccountAccessRole",
                                 "displayName": "OrganizationAccountAccessRole",
                                 "id": "arn:aws:iam::594073614517:role/OrganizationAccountAccessRole",
                                 "providerName": "aws",
-                                "type": "IamRole",
+                                "type": "Role",
+                                "group": "iam",
                                 "live": {
                                     "Path": "/",
                                     "RoleName": "OrganizationAccountAccessRole",
@@ -283,8 +289,8 @@
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
-                                    "AttachedPolicies": [],
-                                    "InstanceProfiles": []
+                                    "InstanceProfiles": [],
+                                    "AttachedPolicies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -303,12 +309,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/role-cluster",
+                                "uri": "aws::iam::Role::arn:aws:iam::594073614517:role/role-cluster",
                                 "name": "role-cluster",
                                 "displayName": "role-cluster",
                                 "id": "arn:aws:iam::594073614517:role/role-cluster",
                                 "providerName": "aws",
-                                "type": "IamRole",
+                                "type": "Role",
+                                "group": "iam",
                                 "live": {
                                     "Path": "/",
                                     "RoleName": "role-cluster",
@@ -387,12 +394,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::IamRole::arn:aws:iam::594073614517:role/role-node-group",
+                                "uri": "aws::iam::Role::arn:aws:iam::594073614517:role/role-node-group",
                                 "name": "role-node-group",
                                 "displayName": "role-node-group",
                                 "id": "arn:aws:iam::594073614517:role/role-node-group",
                                 "providerName": "aws",
-                                "type": "IamRole",
+                                "type": "Role",
+                                "group": "iam",
                                 "live": {
                                     "Path": "/",
                                     "RoleName": "role-node-group",
@@ -438,6 +446,8 @@
                                             "Value": "EKS"
                                         }
                                     ],
+                                    "Policies": [],
+                                    "InstanceProfiles": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -451,9 +461,7 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ],
-                                    "Policies": [],
-                                    "InstanceProfiles": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -479,14 +487,16 @@
                     },
                     {
                         "type": "HostedZone",
+                        "group": "route53",
                         "resources": [
                             {
-                                "uri": "aws::HostedZone::/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "uri": "aws::route53::HostedZone::/hostedzone/Z09429703J0B6XPB98IZ9",
                                 "name": "starhack.it.",
                                 "displayName": "starhack.it.",
                                 "id": "/hostedzone/Z09429703J0B6XPB98IZ9",
                                 "providerName": "aws",
                                 "type": "HostedZone",
+                                "group": "route53",
                                 "live": {
                                     "Id": "/hostedzone/Z09429703J0B6XPB98IZ9",
                                     "Name": "starhack.it.",
@@ -495,36 +505,6 @@
                                         "PrivateZone": false
                                     },
                                     "ResourceRecordSetCount": 3,
-                                    "Tags": [
-                                        {
-                                            "Key": "DelegationSetId",
-                                            "Value": "N07547383GD2HQNOQVK2N"
-                                        },
-                                        {
-                                            "Key": "ManagedBy",
-                                            "Value": "GruCloud"
-                                        },
-                                        {
-                                            "Key": "stage",
-                                            "Value": "dev"
-                                        },
-                                        {
-                                            "Key": "starhack.it.",
-                                            "Value": "starhack.it.-ipv4"
-                                        },
-                                        {
-                                            "Key": "CreatedByProvider",
-                                            "Value": "aws"
-                                        },
-                                        {
-                                            "Key": "projectName",
-                                            "Value": "grucloud-aws-starhackit"
-                                        },
-                                        {
-                                            "Key": "Name",
-                                            "Value": "starhack.it."
-                                        }
-                                    ],
                                     "RecordSet": [
                                         {
                                             "Name": "starhack.it.",
@@ -565,6 +545,36 @@
                                                 }
                                             ]
                                         }
+                                    ],
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
+                                        }
                                     ]
                                 },
                                 "cannotBeDeleted": false,
@@ -583,14 +593,16 @@
                     },
                     {
                         "type": "Vpc",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::Vpc::vpc-904ceced",
+                                "uri": "aws::ec2::Vpc::vpc-904ceced",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "vpc-904ceced",
                                 "providerName": "aws",
                                 "type": "Vpc",
+                                "group": "ec2",
                                 "live": {
                                     "CidrBlock": "172.31.0.0/16",
                                     "DhcpOptionsId": "dopt-814e03fb",
@@ -624,14 +636,16 @@
                     },
                     {
                         "type": "InternetGateway",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::InternetGateway::igw-7bdccb00",
+                                "uri": "aws::ec2::InternetGateway::igw-7bdccb00",
                                 "name": "igw-7bdccb00",
                                 "displayName": "igw-7bdccb00",
                                 "id": "igw-7bdccb00",
                                 "providerName": "aws",
                                 "type": "InternetGateway",
+                                "group": "ec2",
                                 "live": {
                                     "Attachments": [
                                         {
@@ -661,14 +675,16 @@
                     },
                     {
                         "type": "Subnet",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::Subnet::subnet-c113348c",
+                                "uri": "aws::ec2::Subnet::subnet-c113348c",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-c113348c",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1d",
                                     "AvailabilityZoneId": "use1-az4",
@@ -701,12 +717,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::Subnet::subnet-5fe2396e",
+                                "uri": "aws::ec2::Subnet::subnet-5fe2396e",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-5fe2396e",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1e",
                                     "AvailabilityZoneId": "use1-az3",
@@ -739,12 +756,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::Subnet::subnet-79c08e77",
+                                "uri": "aws::ec2::Subnet::subnet-79c08e77",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-79c08e77",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1f",
                                     "AvailabilityZoneId": "use1-az5",
@@ -777,12 +795,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::Subnet::subnet-7e2fbe21",
+                                "uri": "aws::ec2::Subnet::subnet-7e2fbe21",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-7e2fbe21",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1a",
                                     "AvailabilityZoneId": "use1-az6",
@@ -815,12 +834,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::Subnet::subnet-4914802f",
+                                "uri": "aws::ec2::Subnet::subnet-4914802f",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-4914802f",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1b",
                                     "AvailabilityZoneId": "use1-az1",
@@ -853,12 +873,13 @@
                                 "show": true
                             },
                             {
-                                "uri": "aws::Subnet::subnet-b1bb2990",
+                                "uri": "aws::ec2::Subnet::subnet-b1bb2990",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "subnet-b1bb2990",
                                 "providerName": "aws",
                                 "type": "Subnet",
+                                "group": "ec2",
                                 "live": {
                                     "AvailabilityZone": "us-east-1c",
                                     "AvailabilityZoneId": "use1-az2",
@@ -893,15 +914,82 @@
                         ]
                     },
                     {
-                        "type": "SecurityGroup",
+                        "type": "RouteTable",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::SecurityGroup::sg-15c54c1e",
+                                "uri": "aws::ec2::RouteTable::rtb-461d3238",
+                                "name": "rtb-461d3238",
+                                "displayName": "rtb-461d3238",
+                                "id": "rtb-461d3238",
+                                "providerName": "aws",
+                                "type": "RouteTable",
+                                "group": "ec2",
+                                "live": {
+                                    "Associations": [
+                                        {
+                                            "Main": true,
+                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
+                                            "RouteTableId": "rtb-461d3238",
+                                            "AssociationState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "PropagatingVgws": [],
+                                    "RouteTableId": "rtb-461d3238",
+                                    "Routes": [
+                                        {
+                                            "DestinationCidrBlock": "172.31.0.0/16",
+                                            "GatewayId": "local",
+                                            "Origin": "CreateRouteTable",
+                                            "State": "active"
+                                        },
+                                        {
+                                            "DestinationCidrBlock": "0.0.0.0/0",
+                                            "GatewayId": "igw-7bdccb00",
+                                            "Origin": "CreateRoute",
+                                            "State": "active"
+                                        }
+                                    ],
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "InternetGateway",
+                                        "ids": [
+                                            "igw-7bdccb00"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SecurityGroup",
+                        "group": "ec2",
+                        "resources": [
+                            {
+                                "uri": "aws::ec2::SecurityGroup::sg-15c54c1e",
                                 "name": "default",
                                 "displayName": "default",
                                 "id": "sg-15c54c1e",
                                 "providerName": "aws",
                                 "type": "SecurityGroup",
+                                "group": "ec2",
                                 "live": {
                                     "Description": "default VPC security group",
                                     "GroupName": "default",
@@ -950,69 +1038,6 @@
                                         "type": "SecurityGroup",
                                         "ids": [
                                             "sg-15c54c1e"
-                                        ]
-                                    }
-                                ],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
-                    },
-                    {
-                        "type": "RouteTable",
-                        "resources": [
-                            {
-                                "uri": "aws::RouteTable::rtb-461d3238",
-                                "name": "rtb-461d3238",
-                                "displayName": "rtb-461d3238",
-                                "id": "rtb-461d3238",
-                                "providerName": "aws",
-                                "type": "RouteTable",
-                                "live": {
-                                    "Associations": [
-                                        {
-                                            "Main": true,
-                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
-                                            "RouteTableId": "rtb-461d3238",
-                                            "AssociationState": {
-                                                "State": "associated"
-                                            }
-                                        }
-                                    ],
-                                    "PropagatingVgws": [],
-                                    "RouteTableId": "rtb-461d3238",
-                                    "Routes": [
-                                        {
-                                            "DestinationCidrBlock": "172.31.0.0/16",
-                                            "GatewayId": "local",
-                                            "Origin": "CreateRouteTable",
-                                            "State": "active"
-                                        },
-                                        {
-                                            "DestinationCidrBlock": "0.0.0.0/0",
-                                            "GatewayId": "igw-7bdccb00",
-                                            "Origin": "CreateRoute",
-                                            "State": "active"
-                                        }
-                                    ],
-                                    "Tags": [],
-                                    "VpcId": "vpc-904ceced",
-                                    "OwnerId": "594073614517"
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": true,
-                                "namespace": "",
-                                "dependencies": [
-                                    {
-                                        "type": "Vpc",
-                                        "ids": [
-                                            "vpc-904ceced"
-                                        ]
-                                    },
-                                    {
-                                        "type": "InternetGateway",
-                                        "ids": [
-                                            "igw-7bdccb00"
                                         ]
                                     }
                                 ],

@@ -122,18 +122,18 @@
 <path fill="none" stroke="#707070" d="M166.06,-687.25C193.48,-725.71 245.71,-793.79 302,-840 308.5,-845.34 315.85,-850.33 323.25,-854.84"/>
 <polygon fill="#707070" stroke="#707070" points="321.51,-857.87 331.91,-859.89 325.04,-851.83 321.51,-857.87"/>
 </g>
-<!-- Route53Domain::::starhack.it -->
+<!-- Domain::::starhack.it -->
 <g id="node2" class="node">
-<title>Route53Domain::::starhack.it</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="206,-611 84,-611 84,-553 206,-553 206,-611"/>
-<text text-anchor="start" x="96" y="-591.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Route53Domain</text>
-<text text-anchor="start" x="96" y="-566.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it</text>
+<title>Domain::::starhack.it</title>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="198.5,-611 91.5,-611 91.5,-553 198.5,-553 198.5,-611"/>
+<text text-anchor="start" x="104" y="-591.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Domain</text>
+<text text-anchor="start" x="104" y="-566.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it</text>
 </g>
-<!-- IamRole::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole -->
+<!-- Role::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole -->
 <g id="node3" class="node">
-<title>IamRole::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole</title>
+<title>Role::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="266,-535 24,-535 24,-477 266,-477 266,-535"/>
-<text text-anchor="start" x="36" y="-515.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">IamRole</text>
+<text text-anchor="start" x="36" y="-515.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Role</text>
 <text text-anchor="start" x="36" y="-490.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">OrganizationAccountAccessRole</text>
 </g>
 <!-- HostedZone::::/hostedzone/Z09429703J0B6XPB98IZ9 -->
@@ -200,29 +200,29 @@
 <text text-anchor="start" x="100" y="-338.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">rtb&#45;461d3238</text>
 </g>
 <!-- RouteTable::::rtb&#45;461d3238&#45;&gt;Vpc::::vpc&#45;904ceced -->
-<g id="edge17" class="edge">
+<g id="edge15" class="edge">
 <title>RouteTable::::rtb&#45;461d3238&#45;&gt;Vpc::::vpc&#45;904ceced</title>
 <path fill="none" stroke="#707070" d="M202.81,-348.93C277.06,-343.47 401.99,-338.65 439,-364 482.87,-394.05 500.69,-456.03 507.84,-496.8"/>
 <polygon fill="#707070" stroke="#707070" points="504.42,-497.61 509.47,-506.92 511.33,-496.49 504.42,-497.61"/>
 </g>
 <!-- RouteTable::::rtb&#45;461d3238&#45;&gt;InternetGateway::::igw&#45;7bdccb00 -->
-<g id="edge18" class="edge">
+<g id="edge16" class="edge">
 <title>RouteTable::::rtb&#45;461d3238&#45;&gt;InternetGateway::::igw&#45;7bdccb00</title>
 <path fill="none" stroke="#707070" d="M202.69,-366.17C229.76,-371.99 262.58,-379.04 291.92,-385.34"/>
 <polygon fill="#707070" stroke="#707070" points="291.21,-388.77 301.73,-387.44 292.68,-381.92 291.21,-388.77"/>
 </g>
-<!-- IamRole::EKS::arn:aws:iam::594073614517:role/role&#45;cluster -->
+<!-- Role::EKS::arn:aws:iam::594073614517:role/role&#45;cluster -->
 <g id="node14" class="node">
-<title>IamRole::EKS::arn:aws:iam::594073614517:role/role&#45;cluster</title>
+<title>Role::EKS::arn:aws:iam::594073614517:role/role&#45;cluster</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-226 87.5,-226 87.5,-168 202.5,-168 202.5,-226"/>
-<text text-anchor="start" x="100" y="-206.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">IamRole</text>
+<text text-anchor="start" x="100" y="-206.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Role</text>
 <text text-anchor="start" x="100" y="-181.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">role&#45;cluster</text>
 </g>
-<!-- IamRole::EKS::arn:aws:iam::594073614517:role/role&#45;node&#45;group -->
+<!-- Role::EKS::arn:aws:iam::594073614517:role/role&#45;node&#45;group -->
 <g id="node15" class="node">
-<title>IamRole::EKS::arn:aws:iam::594073614517:role/role&#45;node&#45;group</title>
+<title>Role::EKS::arn:aws:iam::594073614517:role/role&#45;node&#45;group</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="213.5,-150 76.5,-150 76.5,-92 213.5,-92 213.5,-150"/>
-<text text-anchor="start" x="89" y="-130.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">IamRole</text>
+<text text-anchor="start" x="89" y="-130.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Role</text>
 <text text-anchor="start" x="89" y="-105.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">role&#45;node&#45;group</text>
 </g>
 <!-- SecurityGroup::::sg&#45;15c54c1e -->
@@ -233,13 +233,13 @@
 <text text-anchor="start" x="321.5" y="-272.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">default</text>
 </g>
 <!-- SecurityGroup::::sg&#45;15c54c1e&#45;&gt;Vpc::::vpc&#45;904ceced -->
-<g id="edge15" class="edge">
+<g id="edge17" class="edge">
 <title>SecurityGroup::::sg&#45;15c54c1e&#45;&gt;Vpc::::vpc&#45;904ceced</title>
 <path fill="none" stroke="#707070" d="M409.99,-317.25C420.41,-326.54 431,-337.44 439,-349 470.95,-395.18 491.78,-457.23 502.84,-496.93"/>
 <polygon fill="#707070" stroke="#707070" points="499.52,-498.03 505.51,-506.76 506.27,-496.19 499.52,-498.03"/>
 </g>
 <!-- SecurityGroup::::sg&#45;15c54c1e&#45;&gt;SecurityGroup::::sg&#45;15c54c1e -->
-<g id="edge16" class="edge">
+<g id="edge18" class="edge">
 <title>SecurityGroup::::sg&#45;15c54c1e&#45;&gt;SecurityGroup::::sg&#45;15c54c1e</title>
 <path fill="none" stroke="#707070" d="M343.88,-317.38C343.88,-327.17 352.75,-335 370.5,-335 381.87,-335 389.6,-331.79 393.69,-326.9"/>
 <polygon fill="#707070" stroke="#707070" points="397.02,-327.97 397.12,-317.38 390.44,-325.59 397.02,-327.97"/>
