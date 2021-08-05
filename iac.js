@@ -27,21 +27,23 @@ const createResources = async ({ provider, resources: { keyPair } }) => {
     }),
   });
 
+  const ec2Instance = provider.ec2.makeInstance({
+    name: config.ec2Instance.name,
+    dependencies: { keyPair, eip, image },
+    properties: config.ec2Instance.properties,
+  });
+
   return {
     eip,
-    ec2Instance: provider.ec2.makeInstance({
-      name: config.ec2Instance.name,
-      dependencies: { keyPair, eip, image },
-      properties: config.ec2Instance.properties,
-    }),
+    ec2Instance,
   };
 };
 exports.createResources = createResources;
 
-exports.createStack = async () => {
+exports.createStack = async ({ createProvider }) => {
   // Create a AWS provider
-  const provider = AwsProvider({ config: require("./config") });
-  const keyPair = provider.ec2.useKeyPair({
+  const provider = createProvider(AwsProvider, { config: require("./config") });
+  const keyPair = provider.ec2.makeKeyPair({
     name: provider.config.keyPair.name,
   });
   const resources = await createResources({ provider, resources: { keyPair } });
