@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/b51bb87e-eee1-44cf-ba31-8c0b1844b795.dot",
+        "dotFile": "output/0ea83250-989f-454f-b5e9-bd1b1aed24c2.dot",
         "title": "",
         "provider": [
             "aws"
@@ -16,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-b51bb87e-eee1-44cf-ba31-8c0b1844b795.json"
+        "json": "output/gc-list-0ea83250-989f-454f-b5e9-bd1b1aed24c2.json"
     },
     "result": {
         "error": false,
@@ -286,10 +286,10 @@
                                     },
                                     "MaxSessionDuration": 3600,
                                     "Tags": [],
-                                    "InstanceProfiles": [],
                                     "Policies": [
                                         "AdministratorAccess"
                                     ],
+                                    "InstanceProfiles": [],
                                     "AttachedPolicies": []
                                 },
                                 "cannotBeDeleted": false,
@@ -447,6 +447,7 @@
                                         }
                                     ],
                                     "InstanceProfiles": [],
+                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -460,8 +461,7 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ],
-                                    "Policies": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -480,6 +480,49 @@
                                         "ids": []
                                     }
                                 ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Vpc",
+                        "group": "ec2",
+                        "resources": [
+                            {
+                                "uri": "aws::ec2::Vpc::vpc-904ceced",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "vpc-904ceced",
+                                "providerName": "aws",
+                                "type": "Vpc",
+                                "group": "ec2",
+                                "live": {
+                                    "CidrBlock": "172.31.0.0/16",
+                                    "DhcpOptionsId": "dopt-814e03fb",
+                                    "State": "available",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "InstanceTenancy": "default",
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "CidrBlockAssociationSet": [
+                                        {
+                                            "AssociationId": "vpc-cidr-assoc-cf02bfa0",
+                                            "CidrBlock": "172.31.0.0/16",
+                                            "CidrBlockState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "IsDefault": true,
+                                    "Tags": [],
+                                    "DnsSupport": true,
+                                    "DnsHostnames": true
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [],
                                 "managedByUs": false,
                                 "show": true
                             }
@@ -505,6 +548,36 @@
                                         "PrivateZone": false
                                     },
                                     "ResourceRecordSetCount": 3,
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
+                                        }
+                                    ],
                                     "RecordSet": [
                                         {
                                             "Name": "starhack.it.",
@@ -545,36 +618,6 @@
                                                 }
                                             ]
                                         }
-                                    ],
-                                    "Tags": [
-                                        {
-                                            "Key": "DelegationSetId",
-                                            "Value": "N07547383GD2HQNOQVK2N"
-                                        },
-                                        {
-                                            "Key": "ManagedBy",
-                                            "Value": "GruCloud"
-                                        },
-                                        {
-                                            "Key": "stage",
-                                            "Value": "dev"
-                                        },
-                                        {
-                                            "Key": "starhack.it.",
-                                            "Value": "starhack.it.-ipv4"
-                                        },
-                                        {
-                                            "Key": "CreatedByProvider",
-                                            "Value": "aws"
-                                        },
-                                        {
-                                            "Key": "projectName",
-                                            "Value": "grucloud-aws-starhackit"
-                                        },
-                                        {
-                                            "Key": "Name",
-                                            "Value": "starhack.it."
-                                        }
                                     ]
                                 },
                                 "cannotBeDeleted": false,
@@ -586,49 +629,6 @@
                                         "ids": []
                                     }
                                 ],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
-                    },
-                    {
-                        "type": "Vpc",
-                        "group": "ec2",
-                        "resources": [
-                            {
-                                "uri": "aws::ec2::Vpc::vpc-904ceced",
-                                "name": "default",
-                                "displayName": "default",
-                                "id": "vpc-904ceced",
-                                "providerName": "aws",
-                                "type": "Vpc",
-                                "group": "ec2",
-                                "live": {
-                                    "CidrBlock": "172.31.0.0/16",
-                                    "DhcpOptionsId": "dopt-814e03fb",
-                                    "State": "available",
-                                    "VpcId": "vpc-904ceced",
-                                    "OwnerId": "594073614517",
-                                    "InstanceTenancy": "default",
-                                    "Ipv6CidrBlockAssociationSet": [],
-                                    "CidrBlockAssociationSet": [
-                                        {
-                                            "AssociationId": "vpc-cidr-assoc-cf02bfa0",
-                                            "CidrBlock": "172.31.0.0/16",
-                                            "CidrBlockState": {
-                                                "State": "associated"
-                                            }
-                                        }
-                                    ],
-                                    "IsDefault": true,
-                                    "Tags": [],
-                                    "DnsHostnames": true,
-                                    "DnsSupport": true
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": true,
-                                "namespace": "",
-                                "dependencies": [],
                                 "managedByUs": false,
                                 "show": true
                             }
@@ -914,6 +914,71 @@
                         ]
                     },
                     {
+                        "type": "RouteTable",
+                        "group": "ec2",
+                        "resources": [
+                            {
+                                "uri": "aws::ec2::RouteTable::rtb-461d3238",
+                                "name": "rtb-461d3238",
+                                "displayName": "rtb-461d3238",
+                                "id": "rtb-461d3238",
+                                "providerName": "aws",
+                                "type": "RouteTable",
+                                "group": "ec2",
+                                "live": {
+                                    "Associations": [
+                                        {
+                                            "Main": true,
+                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
+                                            "RouteTableId": "rtb-461d3238",
+                                            "AssociationState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "PropagatingVgws": [],
+                                    "RouteTableId": "rtb-461d3238",
+                                    "Routes": [
+                                        {
+                                            "DestinationCidrBlock": "172.31.0.0/16",
+                                            "GatewayId": "local",
+                                            "Origin": "CreateRouteTable",
+                                            "State": "active"
+                                        },
+                                        {
+                                            "DestinationCidrBlock": "0.0.0.0/0",
+                                            "GatewayId": "igw-7bdccb00",
+                                            "Origin": "CreateRoute",
+                                            "State": "active"
+                                        }
+                                    ],
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517"
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "InternetGateway",
+                                        "ids": [
+                                            "igw-7bdccb00"
+                                        ]
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
                         "type": "SecurityGroup",
                         "group": "ec2",
                         "resources": [
@@ -973,71 +1038,6 @@
                                         "type": "SecurityGroup",
                                         "ids": [
                                             "sg-15c54c1e"
-                                        ]
-                                    }
-                                ],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
-                    },
-                    {
-                        "type": "RouteTable",
-                        "group": "ec2",
-                        "resources": [
-                            {
-                                "uri": "aws::ec2::RouteTable::rtb-461d3238",
-                                "name": "rtb-461d3238",
-                                "displayName": "rtb-461d3238",
-                                "id": "rtb-461d3238",
-                                "providerName": "aws",
-                                "type": "RouteTable",
-                                "group": "ec2",
-                                "live": {
-                                    "Associations": [
-                                        {
-                                            "Main": true,
-                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
-                                            "RouteTableId": "rtb-461d3238",
-                                            "AssociationState": {
-                                                "State": "associated"
-                                            }
-                                        }
-                                    ],
-                                    "PropagatingVgws": [],
-                                    "RouteTableId": "rtb-461d3238",
-                                    "Routes": [
-                                        {
-                                            "DestinationCidrBlock": "172.31.0.0/16",
-                                            "GatewayId": "local",
-                                            "Origin": "CreateRouteTable",
-                                            "State": "active"
-                                        },
-                                        {
-                                            "DestinationCidrBlock": "0.0.0.0/0",
-                                            "GatewayId": "igw-7bdccb00",
-                                            "Origin": "CreateRoute",
-                                            "State": "active"
-                                        }
-                                    ],
-                                    "Tags": [],
-                                    "VpcId": "vpc-904ceced",
-                                    "OwnerId": "594073614517"
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": true,
-                                "namespace": "",
-                                "dependencies": [
-                                    {
-                                        "type": "Vpc",
-                                        "ids": [
-                                            "vpc-904ceced"
-                                        ]
-                                    },
-                                    {
-                                        "type": "InternetGateway",
-                                        "ids": [
-                                            "igw-7bdccb00"
                                         ]
                                     }
                                 ],
