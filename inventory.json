@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/0ea83250-989f-454f-b5e9-bd1b1aed24c2.dot",
+        "dotFile": "output/c599c165-87c9-473f-a49d-8e539141595b.dot",
         "title": "",
         "provider": [
             "aws"
@@ -16,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-0ea83250-989f-454f-b5e9-bd1b1aed24c2.json"
+        "json": "output/gc-list-c599c165-87c9-473f-a49d-8e539141595b.json"
     },
     "result": {
         "error": false,
@@ -286,11 +286,11 @@
                                     },
                                     "MaxSessionDuration": 3600,
                                     "Tags": [],
+                                    "AttachedPolicies": [],
+                                    "InstanceProfiles": [],
                                     "Policies": [
                                         "AdministratorAccess"
-                                    ],
-                                    "InstanceProfiles": [],
-                                    "AttachedPolicies": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -361,7 +361,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "InstanceProfiles": [],
                                     "Policies": [],
                                     "AttachedPolicies": [
                                         {
@@ -372,7 +371,8 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -446,7 +446,6 @@
                                             "Value": "EKS"
                                         }
                                     ],
-                                    "InstanceProfiles": [],
                                     "Policies": [],
                                     "AttachedPolicies": [
                                         {
@@ -461,7 +460,8 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ]
+                                    ],
+                                    "InstanceProfiles": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -480,49 +480,6 @@
                                         "ids": []
                                     }
                                 ],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
-                    },
-                    {
-                        "type": "Vpc",
-                        "group": "ec2",
-                        "resources": [
-                            {
-                                "uri": "aws::ec2::Vpc::vpc-904ceced",
-                                "name": "default",
-                                "displayName": "default",
-                                "id": "vpc-904ceced",
-                                "providerName": "aws",
-                                "type": "Vpc",
-                                "group": "ec2",
-                                "live": {
-                                    "CidrBlock": "172.31.0.0/16",
-                                    "DhcpOptionsId": "dopt-814e03fb",
-                                    "State": "available",
-                                    "VpcId": "vpc-904ceced",
-                                    "OwnerId": "594073614517",
-                                    "InstanceTenancy": "default",
-                                    "Ipv6CidrBlockAssociationSet": [],
-                                    "CidrBlockAssociationSet": [
-                                        {
-                                            "AssociationId": "vpc-cidr-assoc-cf02bfa0",
-                                            "CidrBlock": "172.31.0.0/16",
-                                            "CidrBlockState": {
-                                                "State": "associated"
-                                            }
-                                        }
-                                    ],
-                                    "IsDefault": true,
-                                    "Tags": [],
-                                    "DnsSupport": true,
-                                    "DnsHostnames": true
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": true,
-                                "namespace": "",
-                                "dependencies": [],
                                 "managedByUs": false,
                                 "show": true
                             }
@@ -629,6 +586,49 @@
                                         "ids": []
                                     }
                                 ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Vpc",
+                        "group": "ec2",
+                        "resources": [
+                            {
+                                "uri": "aws::ec2::Vpc::vpc-904ceced",
+                                "name": "default",
+                                "displayName": "default",
+                                "id": "vpc-904ceced",
+                                "providerName": "aws",
+                                "type": "Vpc",
+                                "group": "ec2",
+                                "live": {
+                                    "CidrBlock": "172.31.0.0/16",
+                                    "DhcpOptionsId": "dopt-814e03fb",
+                                    "State": "available",
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517",
+                                    "InstanceTenancy": "default",
+                                    "Ipv6CidrBlockAssociationSet": [],
+                                    "CidrBlockAssociationSet": [
+                                        {
+                                            "AssociationId": "vpc-cidr-assoc-cf02bfa0",
+                                            "CidrBlock": "172.31.0.0/16",
+                                            "CidrBlockState": {
+                                                "State": "associated"
+                                            }
+                                        }
+                                    ],
+                                    "IsDefault": true,
+                                    "Tags": [],
+                                    "DnsSupport": true,
+                                    "DnsHostnames": true
+                                },
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
+                                "namespace": "",
+                                "dependencies": [],
                                 "managedByUs": false,
                                 "show": true
                             }
