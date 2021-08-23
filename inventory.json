@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/8716f756-cdbd-4b52-9881-c8b21067f20c.dot",
+        "dotFile": "output/b51bb87e-eee1-44cf-ba31-8c0b1844b795.dot",
         "title": "",
         "provider": [
             "aws"
@@ -16,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-8716f756-cdbd-4b52-9881-c8b21067f20c.json"
+        "json": "output/gc-list-b51bb87e-eee1-44cf-ba31-8c0b1844b795.json"
     },
     "result": {
         "error": false,
@@ -362,6 +362,7 @@
                                         }
                                     ],
                                     "InstanceProfiles": [],
+                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSClusterPolicy",
@@ -371,8 +372,7 @@
                                             "PolicyName": "AmazonEKSVPCResourceController",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
                                         }
-                                    ],
-                                    "Policies": []
+                                    ]
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -447,7 +447,6 @@
                                         }
                                     ],
                                     "InstanceProfiles": [],
-                                    "Policies": [],
                                     "AttachedPolicies": [
                                         {
                                             "PolicyName": "AmazonEKSWorkerNodePolicy",
@@ -461,7 +460,8 @@
                                             "PolicyName": "AmazonEKS_CNI_Policy",
                                             "PolicyArn": "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
                                         }
-                                    ]
+                                    ],
+                                    "Policies": []
                                 },
                                 "cannotBeDeleted": false,
                                 "isDefault": false,
@@ -477,6 +477,112 @@
                                     },
                                     {
                                         "type": "IamOpenIDConnectProvider",
+                                        "ids": []
+                                    }
+                                ],
+                                "managedByUs": false,
+                                "show": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "HostedZone",
+                        "group": "route53",
+                        "resources": [
+                            {
+                                "uri": "aws::route53::HostedZone::/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "name": "starhack.it.",
+                                "displayName": "starhack.it.",
+                                "id": "/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "providerName": "aws",
+                                "type": "HostedZone",
+                                "group": "route53",
+                                "live": {
+                                    "Id": "/hostedzone/Z09429703J0B6XPB98IZ9",
+                                    "Name": "starhack.it.",
+                                    "CallerReference": "grucloud-Fri Apr 30 2021 00:26:41 GMT-0500 (Colombia Standard Time)",
+                                    "Config": {
+                                        "PrivateZone": false
+                                    },
+                                    "ResourceRecordSetCount": 3,
+                                    "RecordSet": [
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "A",
+                                            "TTL": 60,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "18.130.120.30"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "NS",
+                                            "TTL": 172800,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "ns-1752.awsdns-27.co.uk."
+                                                },
+                                                {
+                                                    "Value": "ns-1089.awsdns-08.org."
+                                                },
+                                                {
+                                                    "Value": "ns-36.awsdns-04.com."
+                                                },
+                                                {
+                                                    "Value": "ns-674.awsdns-20.net."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Name": "starhack.it.",
+                                            "Type": "SOA",
+                                            "TTL": 900,
+                                            "ResourceRecords": [
+                                                {
+                                                    "Value": "ns-1752.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
+                                        }
+                                    ]
+                                },
+                                "cannotBeDeleted": false,
+                                "isDefault": false,
+                                "namespace": "",
+                                "dependencies": [
+                                    {
+                                        "type": "HostedZone",
                                         "ids": []
                                     }
                                 ],
@@ -808,71 +914,6 @@
                         ]
                     },
                     {
-                        "type": "RouteTable",
-                        "group": "ec2",
-                        "resources": [
-                            {
-                                "uri": "aws::ec2::RouteTable::rtb-461d3238",
-                                "name": "rtb-461d3238",
-                                "displayName": "rtb-461d3238",
-                                "id": "rtb-461d3238",
-                                "providerName": "aws",
-                                "type": "RouteTable",
-                                "group": "ec2",
-                                "live": {
-                                    "Associations": [
-                                        {
-                                            "Main": true,
-                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
-                                            "RouteTableId": "rtb-461d3238",
-                                            "AssociationState": {
-                                                "State": "associated"
-                                            }
-                                        }
-                                    ],
-                                    "PropagatingVgws": [],
-                                    "RouteTableId": "rtb-461d3238",
-                                    "Routes": [
-                                        {
-                                            "DestinationCidrBlock": "172.31.0.0/16",
-                                            "GatewayId": "local",
-                                            "Origin": "CreateRouteTable",
-                                            "State": "active"
-                                        },
-                                        {
-                                            "DestinationCidrBlock": "0.0.0.0/0",
-                                            "GatewayId": "igw-7bdccb00",
-                                            "Origin": "CreateRoute",
-                                            "State": "active"
-                                        }
-                                    ],
-                                    "Tags": [],
-                                    "VpcId": "vpc-904ceced",
-                                    "OwnerId": "594073614517"
-                                },
-                                "cannotBeDeleted": true,
-                                "isDefault": true,
-                                "namespace": "",
-                                "dependencies": [
-                                    {
-                                        "type": "Vpc",
-                                        "ids": [
-                                            "vpc-904ceced"
-                                        ]
-                                    },
-                                    {
-                                        "type": "InternetGateway",
-                                        "ids": [
-                                            "igw-7bdccb00"
-                                        ]
-                                    }
-                                ],
-                                "managedByUs": false,
-                                "show": true
-                            }
-                        ]
-                    },
-                    {
                         "type": "SecurityGroup",
                         "group": "ec2",
                         "resources": [
@@ -941,104 +982,63 @@
                         ]
                     },
                     {
-                        "type": "HostedZone",
-                        "group": "route53",
+                        "type": "RouteTable",
+                        "group": "ec2",
                         "resources": [
                             {
-                                "uri": "aws::route53::HostedZone::/hostedzone/Z09429703J0B6XPB98IZ9",
-                                "name": "starhack.it.",
-                                "displayName": "starhack.it.",
-                                "id": "/hostedzone/Z09429703J0B6XPB98IZ9",
+                                "uri": "aws::ec2::RouteTable::rtb-461d3238",
+                                "name": "rtb-461d3238",
+                                "displayName": "rtb-461d3238",
+                                "id": "rtb-461d3238",
                                 "providerName": "aws",
-                                "type": "HostedZone",
-                                "group": "route53",
+                                "type": "RouteTable",
+                                "group": "ec2",
                                 "live": {
-                                    "Id": "/hostedzone/Z09429703J0B6XPB98IZ9",
-                                    "Name": "starhack.it.",
-                                    "CallerReference": "grucloud-Fri Apr 30 2021 00:26:41 GMT-0500 (Colombia Standard Time)",
-                                    "Config": {
-                                        "PrivateZone": false
-                                    },
-                                    "ResourceRecordSetCount": 3,
-                                    "RecordSet": [
+                                    "Associations": [
                                         {
-                                            "Name": "starhack.it.",
-                                            "Type": "A",
-                                            "TTL": 60,
-                                            "ResourceRecords": [
-                                                {
-                                                    "Value": "18.130.120.30"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "Name": "starhack.it.",
-                                            "Type": "NS",
-                                            "TTL": 172800,
-                                            "ResourceRecords": [
-                                                {
-                                                    "Value": "ns-1752.awsdns-27.co.uk."
-                                                },
-                                                {
-                                                    "Value": "ns-1089.awsdns-08.org."
-                                                },
-                                                {
-                                                    "Value": "ns-36.awsdns-04.com."
-                                                },
-                                                {
-                                                    "Value": "ns-674.awsdns-20.net."
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "Name": "starhack.it.",
-                                            "Type": "SOA",
-                                            "TTL": 900,
-                                            "ResourceRecords": [
-                                                {
-                                                    "Value": "ns-1752.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
-                                                }
-                                            ]
+                                            "Main": true,
+                                            "RouteTableAssociationId": "rtbassoc-b5a43bc4",
+                                            "RouteTableId": "rtb-461d3238",
+                                            "AssociationState": {
+                                                "State": "associated"
+                                            }
                                         }
                                     ],
-                                    "Tags": [
+                                    "PropagatingVgws": [],
+                                    "RouteTableId": "rtb-461d3238",
+                                    "Routes": [
                                         {
-                                            "Key": "DelegationSetId",
-                                            "Value": "N07547383GD2HQNOQVK2N"
+                                            "DestinationCidrBlock": "172.31.0.0/16",
+                                            "GatewayId": "local",
+                                            "Origin": "CreateRouteTable",
+                                            "State": "active"
                                         },
                                         {
-                                            "Key": "ManagedBy",
-                                            "Value": "GruCloud"
-                                        },
-                                        {
-                                            "Key": "stage",
-                                            "Value": "dev"
-                                        },
-                                        {
-                                            "Key": "starhack.it.",
-                                            "Value": "starhack.it.-ipv4"
-                                        },
-                                        {
-                                            "Key": "CreatedByProvider",
-                                            "Value": "aws"
-                                        },
-                                        {
-                                            "Key": "projectName",
-                                            "Value": "grucloud-aws-starhackit"
-                                        },
-                                        {
-                                            "Key": "Name",
-                                            "Value": "starhack.it."
+                                            "DestinationCidrBlock": "0.0.0.0/0",
+                                            "GatewayId": "igw-7bdccb00",
+                                            "Origin": "CreateRoute",
+                                            "State": "active"
                                         }
-                                    ]
+                                    ],
+                                    "Tags": [],
+                                    "VpcId": "vpc-904ceced",
+                                    "OwnerId": "594073614517"
                                 },
-                                "cannotBeDeleted": false,
-                                "isDefault": false,
+                                "cannotBeDeleted": true,
+                                "isDefault": true,
                                 "namespace": "",
                                 "dependencies": [
                                     {
-                                        "type": "HostedZone",
-                                        "ids": []
+                                        "type": "Vpc",
+                                        "ids": [
+                                            "vpc-904ceced"
+                                        ]
+                                    },
+                                    {
+                                        "type": "InternetGateway",
+                                        "ids": [
+                                            "igw-7bdccb00"
+                                        ]
                                     }
                                 ],
                                 "managedByUs": false,

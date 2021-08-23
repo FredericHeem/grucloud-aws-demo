@@ -27,12 +27,12 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0 -->
 <g id="node1" class="node">
 <title>NetworkAcl::::acl&#45;dd3a31a0</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-679 87.5,-679 87.5,-621 202.5,-621 202.5,-679"/>
-<text text-anchor="start" x="100" y="-659.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">NetworkAcl</text>
-<text text-anchor="start" x="100" y="-634.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">acl&#45;dd3a31a0</text>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-687 87.5,-687 87.5,-629 202.5,-629 202.5,-687"/>
+<text text-anchor="start" x="100" y="-667.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">NetworkAcl</text>
+<text text-anchor="start" x="100" y="-642.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">acl&#45;dd3a31a0</text>
 </g>
 <!-- Vpc::::vpc&#45;904ceced -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>Vpc::::vpc&#45;904ceced</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="552,-565 475,-565 475,-507 552,-507 552,-565"/>
 <text text-anchor="start" x="487.5" y="-545.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Vpc</text>
@@ -41,11 +41,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Vpc::::vpc&#45;904ceced -->
 <g id="edge1" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Vpc::::vpc&#45;904ceced</title>
-<path fill="none" stroke="#707070" d="M202.71,-639.09C225.3,-632.04 249.74,-620.57 266,-602 308.9,-553.02 250.62,-499.98 302,-460 326.03,-441.3 410.97,-448.11 439,-460 457.96,-468.04 474.43,-483.64 486.93,-498.62"/>
+<path fill="none" stroke="#707070" d="M202.71,-652.3C225.3,-647.21 249.74,-637.71 266,-620 315.29,-566.31 245.08,-505.53 302,-460 325.77,-440.98 410.97,-448.11 439,-460 457.96,-468.04 474.43,-483.64 486.93,-498.62"/>
 <polygon fill="#707070" stroke="#707070" points="484.5,-501.18 493.47,-506.83 489.98,-496.82 484.5,-501.18"/>
 </g>
 <!-- Subnet::::subnet&#45;c113348c -->
-<g id="node6" class="node">
+<g id="node7" class="node">
 <title>Subnet::::subnet&#45;c113348c</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-527 332,-527 332,-469 409,-469 409,-527"/>
 <text text-anchor="start" x="344.5" y="-507.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -54,11 +54,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;c113348c -->
 <g id="edge2" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;c113348c</title>
-<path fill="none" stroke="#707070" d="M202.69,-636.24C224.36,-628.84 248.13,-617.86 266,-602 290.99,-579.82 278.53,-559.78 302,-536 308.11,-529.81 315.44,-524.32 322.99,-519.57"/>
-<polygon fill="#707070" stroke="#707070" points="325.04,-522.43 331.89,-514.34 321.49,-516.39 325.04,-522.43"/>
+<path fill="none" stroke="#707070" d="M202.72,-650.4C224.65,-645 248.59,-635.78 266,-620 296.1,-592.72 274.87,-566.23 302,-536 307.88,-529.45 315.15,-523.77 322.74,-518.94"/>
+<polygon fill="#707070" stroke="#707070" points="324.87,-521.75 331.71,-513.66 321.32,-515.72 324.87,-521.75"/>
 </g>
 <!-- Subnet::::subnet&#45;5fe2396e -->
-<g id="node7" class="node">
+<g id="node8" class="node">
 <title>Subnet::::subnet&#45;5fe2396e</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-603 332,-603 332,-545 409,-545 409,-603"/>
 <text text-anchor="start" x="344.5" y="-583.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -67,11 +67,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;5fe2396e -->
 <g id="edge7" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;5fe2396e</title>
-<path fill="none" stroke="#707070" d="M202.69,-630.72C239.69,-618.14 287.42,-601.91 322.34,-590.03"/>
-<polygon fill="#707070" stroke="#707070" points="323.49,-593.34 331.83,-586.81 321.24,-586.71 323.49,-593.34"/>
+<path fill="none" stroke="#707070" d="M202.61,-641.5C222.79,-635.24 245.57,-627.75 266,-620 284.62,-612.94 304.7,-604.27 322.17,-596.37"/>
+<polygon fill="#707070" stroke="#707070" points="323.94,-599.41 331.59,-592.07 321.03,-593.04 323.94,-599.41"/>
 </g>
 <!-- Subnet::::subnet&#45;79c08e77 -->
-<g id="node8" class="node">
+<g id="node9" class="node">
 <title>Subnet::::subnet&#45;79c08e77</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-679 332,-679 332,-621 409,-621 409,-679"/>
 <text text-anchor="start" x="344.5" y="-659.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -80,11 +80,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;79c08e77 -->
 <g id="edge4" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;79c08e77</title>
-<path fill="none" stroke="#707070" d="M202.69,-650C239.37,-650 286.61,-650 321.45,-650"/>
-<polygon fill="#707070" stroke="#707070" points="321.83,-653.5 331.83,-650 321.83,-646.5 321.83,-653.5"/>
+<path fill="none" stroke="#707070" d="M202.69,-655.97C239.37,-654.66 286.61,-652.97 321.45,-651.72"/>
+<polygon fill="#707070" stroke="#707070" points="321.97,-655.2 331.83,-651.35 321.72,-648.21 321.97,-655.2"/>
 </g>
 <!-- Subnet::::subnet&#45;7e2fbe21 -->
-<g id="node9" class="node">
+<g id="node10" class="node">
 <title>Subnet::::subnet&#45;7e2fbe21</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-755 332,-755 332,-697 409,-697 409,-755"/>
 <text text-anchor="start" x="344.5" y="-735.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -93,11 +93,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;7e2fbe21 -->
 <g id="edge6" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;7e2fbe21</title>
-<path fill="none" stroke="#707070" d="M202.69,-669.28C239.69,-681.86 287.42,-698.09 322.34,-709.97"/>
-<polygon fill="#707070" stroke="#707070" points="321.24,-713.29 331.83,-713.19 323.49,-706.66 321.24,-713.29"/>
+<path fill="none" stroke="#707070" d="M202.69,-675.25C239.53,-686.46 287.02,-700.9 321.9,-711.52"/>
+<polygon fill="#707070" stroke="#707070" points="321.25,-714.98 331.83,-714.54 323.29,-708.28 321.25,-714.98"/>
 </g>
 <!-- Subnet::::subnet&#45;4914802f -->
-<g id="node10" class="node">
+<g id="node11" class="node">
 <title>Subnet::::subnet&#45;4914802f</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-831 332,-831 332,-773 409,-773 409,-831"/>
 <text text-anchor="start" x="344.5" y="-811.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -106,11 +106,11 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;4914802f -->
 <g id="edge3" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;4914802f</title>
-<path fill="none" stroke="#707070" d="M183.26,-679.16C214.33,-703 260.11,-737.04 302,-764 308.68,-768.3 315.87,-772.64 322.98,-776.77"/>
-<polygon fill="#707070" stroke="#707070" points="321.48,-779.94 331.9,-781.87 324.95,-773.87 321.48,-779.94"/>
+<path fill="none" stroke="#707070" d="M186.76,-687.08C217.88,-708.94 262.06,-739.25 302,-764 308.67,-768.13 315.81,-772.36 322.85,-776.42"/>
+<polygon fill="#707070" stroke="#707070" points="321.26,-779.54 331.68,-781.45 324.73,-773.46 321.26,-779.54"/>
 </g>
 <!-- Subnet::::subnet&#45;b1bb2990 -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>Subnet::::subnet&#45;b1bb2990</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="409,-907 332,-907 332,-849 409,-849 409,-907"/>
 <text text-anchor="start" x="344.5" y="-887.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Subnet</text>
@@ -119,25 +119,32 @@
 <!-- NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;b1bb2990 -->
 <g id="edge5" class="edge">
 <title>NetworkAcl::::acl&#45;dd3a31a0&#45;&gt;Subnet::::subnet&#45;b1bb2990</title>
-<path fill="none" stroke="#707070" d="M164.86,-679.24C191.71,-719.21 244.13,-791.45 302,-840 308.44,-845.4 315.76,-850.44 323.15,-854.95"/>
-<polygon fill="#707070" stroke="#707070" points="321.41,-857.99 331.81,-860.01 324.94,-851.95 321.41,-857.99"/>
+<path fill="none" stroke="#707070" d="M166.06,-687.25C193.48,-725.71 245.71,-793.79 302,-840 308.5,-845.34 315.85,-850.33 323.25,-854.84"/>
+<polygon fill="#707070" stroke="#707070" points="321.51,-857.87 331.91,-859.89 325.04,-851.83 321.51,-857.87"/>
 </g>
 <!-- Domain::::starhack.it -->
 <g id="node2" class="node">
 <title>Domain::::starhack.it</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="198.5,-593 91.5,-593 91.5,-535 198.5,-535 198.5,-593"/>
-<text text-anchor="start" x="104" y="-573.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Domain</text>
-<text text-anchor="start" x="104" y="-548.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it</text>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="198.5,-611 91.5,-611 91.5,-553 198.5,-553 198.5,-611"/>
+<text text-anchor="start" x="104" y="-591.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Domain</text>
+<text text-anchor="start" x="104" y="-566.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it</text>
 </g>
 <!-- Role::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole -->
 <g id="node3" class="node">
 <title>Role::::arn:aws:iam::594073614517:role/OrganizationAccountAccessRole</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="266,-498 24,-498 24,-440 266,-440 266,-498"/>
-<text text-anchor="start" x="36" y="-478.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Role</text>
-<text text-anchor="start" x="36" y="-453.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">OrganizationAccountAccessRole</text>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="266,-535 24,-535 24,-477 266,-477 266,-535"/>
+<text text-anchor="start" x="36" y="-515.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">Role</text>
+<text text-anchor="start" x="36" y="-490.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">OrganizationAccountAccessRole</text>
+</g>
+<!-- HostedZone::::/hostedzone/Z09429703J0B6XPB98IZ9 -->
+<g id="node4" class="node">
+<title>HostedZone::::/hostedzone/Z09429703J0B6XPB98IZ9</title>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-459 87.5,-459 87.5,-401 202.5,-401 202.5,-459"/>
+<text text-anchor="start" x="100" y="-439.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">HostedZone</text>
+<text text-anchor="start" x="100" y="-414.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it.</text>
 </g>
 <!-- InternetGateway::::igw&#45;7bdccb00 -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>InternetGateway::::igw&#45;7bdccb00</title>
 <polygon fill="#e5e5e5" stroke="#dddddd" points="439,-431 302,-431 302,-373 439,-373 439,-431"/>
 <text text-anchor="start" x="314.5" y="-411.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">InternetGateway</text>
@@ -186,30 +193,23 @@
 <polygon fill="#707070" stroke="#707070" points="516.14,-575.24 512.85,-565.17 509.15,-575.1 516.14,-575.24"/>
 </g>
 <!-- RouteTable::::rtb&#45;461d3238 -->
-<g id="node12" class="node">
+<g id="node13" class="node">
 <title>RouteTable::::rtb&#45;461d3238</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-412 87.5,-412 87.5,-354 202.5,-354 202.5,-412"/>
-<text text-anchor="start" x="100" y="-392.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">RouteTable</text>
-<text text-anchor="start" x="100" y="-367.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">rtb&#45;461d3238</text>
+<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-383 87.5,-383 87.5,-325 202.5,-325 202.5,-383"/>
+<text text-anchor="start" x="100" y="-363.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">RouteTable</text>
+<text text-anchor="start" x="100" y="-338.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">rtb&#45;461d3238</text>
 </g>
 <!-- RouteTable::::rtb&#45;461d3238&#45;&gt;Vpc::::vpc&#45;904ceced -->
-<g id="edge15" class="edge">
+<g id="edge17" class="edge">
 <title>RouteTable::::rtb&#45;461d3238&#45;&gt;Vpc::::vpc&#45;904ceced</title>
-<path fill="none" stroke="#707070" d="M202.67,-371.41C276.76,-357.59 401.51,-339.25 439,-364 483.47,-393.36 501.13,-455.75 508.08,-496.76"/>
-<polygon fill="#707070" stroke="#707070" points="504.63,-497.35 509.62,-506.7 511.54,-496.28 504.63,-497.35"/>
+<path fill="none" stroke="#707070" d="M202.81,-348.93C277.06,-343.47 401.99,-338.65 439,-364 482.87,-394.05 500.69,-456.03 507.84,-496.8"/>
+<polygon fill="#707070" stroke="#707070" points="504.42,-497.61 509.47,-506.92 511.33,-496.49 504.42,-497.61"/>
 </g>
 <!-- RouteTable::::rtb&#45;461d3238&#45;&gt;InternetGateway::::igw&#45;7bdccb00 -->
-<g id="edge16" class="edge">
+<g id="edge18" class="edge">
 <title>RouteTable::::rtb&#45;461d3238&#45;&gt;InternetGateway::::igw&#45;7bdccb00</title>
-<path fill="none" stroke="#707070" d="M202.69,-387.82C229.64,-390.11 262.29,-392.89 291.54,-395.37"/>
-<polygon fill="#707070" stroke="#707070" points="291.47,-398.88 301.73,-396.24 292.06,-391.9 291.47,-398.88"/>
-</g>
-<!-- HostedZone::::/hostedzone/Z09429703J0B6XPB98IZ9 -->
-<g id="node13" class="node">
-<title>HostedZone::::/hostedzone/Z09429703J0B6XPB98IZ9</title>
-<polygon fill="#e5e5e5" stroke="#dddddd" points="202.5,-327 87.5,-327 87.5,-269 202.5,-269 202.5,-327"/>
-<text text-anchor="start" x="100" y="-307.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="16.00" fill="#707070">HostedZone</text>
-<text text-anchor="start" x="100" y="-282.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">starhack.it.</text>
+<path fill="none" stroke="#707070" d="M202.69,-366.17C229.76,-371.99 262.58,-379.04 291.92,-385.34"/>
+<polygon fill="#707070" stroke="#707070" points="291.21,-388.77 301.73,-387.44 292.68,-381.92 291.21,-388.77"/>
 </g>
 <!-- Role::EKS::arn:aws:iam::594073614517:role/role&#45;cluster -->
 <g id="node14" class="node">
@@ -233,13 +233,13 @@
 <text text-anchor="start" x="321.5" y="-272.2" font-family="Helvetica,sans-Serif" font-size="16.00" fill="#383838">default</text>
 </g>
 <!-- SecurityGroup::::sg&#45;15c54c1e&#45;&gt;Vpc::::vpc&#45;904ceced -->
-<g id="edge17" class="edge">
+<g id="edge15" class="edge">
 <title>SecurityGroup::::sg&#45;15c54c1e&#45;&gt;Vpc::::vpc&#45;904ceced</title>
 <path fill="none" stroke="#707070" d="M409.99,-317.25C420.41,-326.54 431,-337.44 439,-349 470.95,-395.18 491.78,-457.23 502.84,-496.93"/>
 <polygon fill="#707070" stroke="#707070" points="499.52,-498.03 505.51,-506.76 506.27,-496.19 499.52,-498.03"/>
 </g>
 <!-- SecurityGroup::::sg&#45;15c54c1e&#45;&gt;SecurityGroup::::sg&#45;15c54c1e -->
-<g id="edge18" class="edge">
+<g id="edge16" class="edge">
 <title>SecurityGroup::::sg&#45;15c54c1e&#45;&gt;SecurityGroup::::sg&#45;15c54c1e</title>
 <path fill="none" stroke="#707070" d="M343.88,-317.38C343.88,-327.17 352.75,-335 370.5,-335 381.87,-335 389.6,-331.79 393.69,-326.9"/>
 <polygon fill="#707070" stroke="#707070" points="397.02,-327.97 397.12,-317.38 390.44,-325.59 397.02,-327.97"/>
