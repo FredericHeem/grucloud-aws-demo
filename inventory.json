@@ -1,7 +1,7 @@
 {
     "command": "list",
     "commandOptions": {
-        "dotFile": "output/b61c3ac7-4046-437d-b9e7-a5bdbb410f1a.dot",
+        "dotFile": "output/5434a4f5-a4c3-4c4b-8fc6-c709d73ca975.dot",
         "title": "",
         "provider": [
             "aws"
@@ -16,7 +16,7 @@
     },
     "programOptions": {
         "infra": "iac_aws.js",
-        "json": "output/gc-list-b61c3ac7-4046-437d-b9e7-a5bdbb410f1a.json"
+        "json": "output/gc-list-5434a4f5-a4c3-4c4b-8fc6-c709d73ca975.json"
     },
     "result": {
         "error": false,
@@ -516,8 +516,8 @@
                                     ],
                                     "IsDefault": true,
                                     "Tags": [],
-                                    "DnsHostnames": true,
-                                    "DnsSupport": true
+                                    "DnsSupport": true,
+                                    "DnsHostnames": true
                                 },
                                 "cannotBeDeleted": true,
                                 "isDefault": true,
@@ -548,36 +548,6 @@
                                         "PrivateZone": false
                                     },
                                     "ResourceRecordSetCount": 3,
-                                    "Tags": [
-                                        {
-                                            "Key": "DelegationSetId",
-                                            "Value": "N07547383GD2HQNOQVK2N"
-                                        },
-                                        {
-                                            "Key": "ManagedBy",
-                                            "Value": "GruCloud"
-                                        },
-                                        {
-                                            "Key": "stage",
-                                            "Value": "dev"
-                                        },
-                                        {
-                                            "Key": "starhack.it.",
-                                            "Value": "starhack.it.-ipv4"
-                                        },
-                                        {
-                                            "Key": "CreatedByProvider",
-                                            "Value": "aws"
-                                        },
-                                        {
-                                            "Key": "projectName",
-                                            "Value": "grucloud-aws-starhackit"
-                                        },
-                                        {
-                                            "Key": "Name",
-                                            "Value": "starhack.it."
-                                        }
-                                    ],
                                     "RecordSet": [
                                         {
                                             "Name": "starhack.it.",
@@ -617,6 +587,36 @@
                                                     "Value": "ns-1752.awsdns-27.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
                                                 }
                                             ]
+                                        }
+                                    ],
+                                    "Tags": [
+                                        {
+                                            "Key": "DelegationSetId",
+                                            "Value": "N07547383GD2HQNOQVK2N"
+                                        },
+                                        {
+                                            "Key": "ManagedBy",
+                                            "Value": "GruCloud"
+                                        },
+                                        {
+                                            "Key": "stage",
+                                            "Value": "dev"
+                                        },
+                                        {
+                                            "Key": "starhack.it.",
+                                            "Value": "starhack.it.-ipv4"
+                                        },
+                                        {
+                                            "Key": "CreatedByProvider",
+                                            "Value": "aws"
+                                        },
+                                        {
+                                            "Key": "projectName",
+                                            "Value": "grucloud-aws-starhackit"
+                                        },
+                                        {
+                                            "Key": "Name",
+                                            "Value": "starhack.it."
                                         }
                                     ]
                                 },
