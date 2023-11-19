@@ -1,7 +1,7 @@
 const pkg = require("./package.json");
 module.exports = () => ({
   projectName: pkg.name,
-  includeGroups: ["EC2", "ECS", "IAM", "KMS", "RDS"],
+  includeGroups: ["EC2"],
   credentials: { profile: "default" },
   partition: "aws",
 });
